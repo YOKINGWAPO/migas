@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Today, Diary calendar, Progress, the streak widget, reminders and privacy. -->
+<resources>
+    <!-- Today -->
+    <string name="today_goal_adjusted">Objetivo ajustado</string>
+    <string name="today_combo_saved">Combo «%1$s» guardado</string>
+    <string name="today_calculating">Calculando…</string>
+    <string name="today_setup_goal_title">Configura tu objetivo</string>
+    <string name="today_setup_goal_text">Peso, altura, fecha de nacimiento y meta para calcular cuánto comer.</string>
+    <string name="today_start">Empezar</string>
+    <string name="today_health_failed">No se pudieron leer los datos de Health Connect</string>
+    <string name="today_retry">Reintentar</string>
+    <string name="today_deleted">Borrado %1$s</string>
+    <string name="today_undo">Deshacer</string>
+    <string name="today_nothing_yesterday">Ayer no hay nada en %1$s</string>
+    <plurals name="today_copied_from_yesterday">
+        <item quantity="one">Copiado %d alimento de ayer</item>
+        <item quantity="many">Copiados %d alimentos de ayer</item>
+        <item quantity="other">Copiados %d alimentos de ayer</item>
+    </plurals>
+    <string name="today_water_health_failed">Agua guardada; Health Connect falló: %1$s</string>
+    <string name="today_note_saved">Nota guardada</string>
+    <string name="today_combo_name">Nombre del combo</string>
+    <plurals name="today_streak_days">
+        <item quantity="one">día de racha</item>
+        <item quantity="many">días de racha</item>
+        <item quantity="other">días de racha</item>
+    </plurals>
+    <plurals name="today_first_reward_in">
+        <item quantity="one">Al %d día gana su primer premio</item>
+        <item quantity="many">A los %d días gana su primer premio</item>
+        <item quantity="other">A los %d días gana su primer premio</item>
+    </plurals>
+    <string name="today_best_streak">Mejor racha: %1$d</string>
+    <string name="today_rewards_unlocked">%1$d de %2$d premios</string>
+    <string name="today_protector_used">protector usado</string>
+    <string name="today_tap_mascot">Toca la mascota para cambiar de premio.</string>
+
+    <!-- Meals and water -->
+    <string name="today_add">Añadir</string>
+    <string name="today_collapse_meal">Plegar %1$s</string>
+    <string name="today_expand_meal">Desplegar %1$s</string>
+    <string name="today_add_to_meal">Añadir a %1$s</string>
+    <string name="today_copy_yesterday">Copiar de ayer</string>
+    <string name="today_save_as_combo">Guardar como combo</string>
+    <string name="today_save_combo">Guardar combo</string>
+    <string name="today_delete">Borrar</string>
+    <string name="today_water">Agua</string>
+    <plurals name="today_water_glasses">
+        <item quantity="one">%1$s de %2$d vaso</item>
+        <item quantity="many">%1$s de %2$d vasos</item>
+        <item quantity="other">%1$s de %2$d vasos</item>
+    </plurals>
+    <string name="today_water_litres">%1$s de %2$s L</string>
+    <string name="today_remove_glass">Quitar el último vaso</string>
+    <string name="today_add_glass">Añadir un vaso</string>
+
+    <!-- Day cards -->
+    <string name="today_happy_birthday">¡Feliz cumpleaños!</string>
+    <plurals name="today_birthday_age">
+        <item quantity="one">Hoy cumples %d año.</item>
+        <item quantity="many">Hoy cumples %d años.</item>
+        <item quantity="other">Hoy cumples %d años.</item>
+    </plurals>
+    <string name="today_new_rewards">¡Premios nuevos!</string>
+    <plurals name="today_new_rewards_text">
+        <item quantity="one">Llevas %d día seguido. Desde hoy tu mascota también puede llevar:</item>
+        <item quantity="many">Llevas %d días seguidos. Desde hoy tu mascota también puede llevar:</item>
+        <item quantity="other">Llevas %d días seguidos. Desde hoy tu mascota también puede llevar:</item>
+    </plurals>
+    <string name="today_lets_go">¡Vamos!</string>
+    <string name="today_burn_review_title">Revisión semanal del gasto</string>
+    <string name="today_burn_review_real">Tu gasto real parece %1$s kcal/día; tu reloj dice %2$s.</string>
+    <string name="today_burn_review_explain">Sale de lo que has comido y de cómo ha cambiado tu peso en las últimas 4 semanas. Si te has dejado comidas sin apuntar, el gasto real sale más bajo de lo que es.</string>
+    <string name="today_burn_review_adjust">Ajustar %1$s kcal</string>
+    <string name="today_not_now">Ahora no</string>
+    <string name="today_combo_question">¿Lo guardo como combo?</string>
+    <plurals name="today_combo_eaten_together">
+        <item quantity="one">Has comido esto junto %d vez en 30 días:</item>
+        <item quantity="many">Has comido esto junto %d veces en 30 días:</item>
+        <item quantity="other">Has comido esto junto %d veces en 30 días:</item>
+    </plurals>
+    <string name="today_and">" y "</string>
+    <string name="today_no_thanks">No, gracias</string>
+    <string name="today_name">Nombre</string>
+    <string name="today_save">Guardar</string>
+    <string name="today_cancel">Cancelar</string>
+    <string name="today_exercise">Ejercicio</string>
+    <plurals name="today_exercise_sets">
+        <item quantity="one">%d serie</item>
+        <item quantity="many">%d series</item>
+        <item quantity="other">%d series</item>
+    </plurals>
+    <plurals name="today_exercise_reps">
+        <item quantity="one">%d repetición</item>
+        <item quantity="many">%d repeticiones</item>
+        <item quantity="other">%d repeticiones</item>
+    </plurals>
+    <string name="today_log_exercise">Apuntar ejercicio</string>
+    <string name="today_measures">Medidas</string>
+    <plurals name="today_photos">
+        <item quantity="one">%d foto</item>
+        <item quantity="many">%d fotos</item>
+        <item quantity="other">%d fotos</item>
+    </plurals>
+    <string name="today_log_measures">Apuntar medidas</string>
+    <string name="today_day_note">Nota del día</string>
+    <string name="today_note_placeholder">Cena fuera, día de fiesta, me encontraba mal…</string>
+    <string name="today_save_note">Guardar nota</string>
+    <string name="today_add_to_day">Añadir al día</string>
+    <string name="today_note">Nota</string>
+
+    <!-- Energy -->
+    <string name="today_eaten_of_target">%1$s de %2$d kcal · toca el anillo para el detalle</string>
+    <string name="today_carbs">Hidratos</string>
+    <string name="today_protein">Proteínas</string>
+    <string name="today_fat">Grasas</string>
+    <string name="today_low_carbs">Con este objetivo solo quedan %1$d g de hidratos: baja la proteína o la grasa en Objetivo.</string>
+    <string name="today_kcal_over">kcal de más</string>
+    <string name="today_kcal_left">kcal restantes</string>
+    <string name="today_where_from">De dónde sale</string>
+    <string name="today_target">Objetivo</string>
+    <string name="today_eaten">Comido</string>
+    <string name="today_burned_so_far">Gastado hasta ahora</string>
+    <string name="today_burned">Gastado</string>
+    <string name="today_split">Reposo %1$s + activas %2$s = %3$s kcal</string>
+    <string name="today_split_forecast">Previsión del día: reposo %1$s + activas %2$s = %3$s kcal</string>
+    <string name="today_burn_correction_note">El objetivo incluye tu ajuste por peso real: %1$s kcal sobre el gasto de tu reloj.</string>
+    <string name="today_no_watch_resting">Sin datos del reloj para este día: solo cuenta tu reposo.</string>
+    <string name="today_no_watch_estimated">Sin datos del reloj para este día: reposo estimado con tu perfil.</string>
+    <string name="today_resting_estimated">Reposo estimado con tu perfil. Si tu reloj da su cifra de reposo, cópiala en Objetivo para que cuadre.</string>
+    <string name="today_refresh_watch">Actualizar datos del reloj</string>
+    <string name="today_nutrients">Nutrientes</string>
+    <string name="today_your_watch">Tu reloj</string>
+    <string name="today_steps">Pasos</string>
+    <string name="today_sleep">Sueño</string>
+    <string name="today_resting_hr">FC reposo</string>
+    <string name="today_sleep_duration">%1$d h %2$d min</string>
+    <string name="today_bpm">%1$d ppm</string>
+    <string name="today_nutrients_reference" formatted="false">% sobre la ingesta de referencia (UE). Solo aparecen los nutrientes que traen tus alimentos.</string>
+
+    <!-- Diary calendar -->
+    <string name="today_prev_month">Mes anterior</string>
+    <string name="today_next_month">Mes siguiente</string>
+    <string name="today_in_goal">Dentro del objetivo</string>
+    <string name="today_over">Pasado</string>
+    <string name="today_logged">Apuntado</string>
+    <string name="today_health_read_failed">No se pudieron leer Health Connect: %1$s</string>
+    <string name="today_no_meals_logged">Sin comidas registradas</string>
+    <string name="today_of_kcal">de %1$d kcal</string>
+    <string name="today_macros_line">Proteínas %1$d g · Hidratos %2$d g · Grasas %3$d g</string>
+    <string name="today_water_line">%1$s L de agua</string>
+    <string name="today_open_day">Abrir el día</string>
+    <string name="today_workout">Entreno</string>
+    <string name="today_photo">Foto</string>
+
+    <!-- Progress -->
+    <string name="today_period_week">7 días</string>
+    <string name="today_period_month">30 días</string>
+    <string name="today_period_quarter">3 meses</string>
+    <string name="today_period_year">Año</string>
+    <string name="today_stats_failed">No se pudieron calcular las estadísticas: %1$s</string>
+    <string name="today_weight">Peso</string>
+    <string name="today_no_weighins">Sin pesajes de la báscula en este periodo (llegan desde tu báscula o tu reloj vía Health Connect).</string>
+    <string name="today_change_since">%1$s desde el %2$s</string>
+    <string name="today_seven_day_mean">Media de los últimos 7 días</string>
+    <string name="today_weekly_rate">ritmo %1$s/semana en las últimas 4 semanas</string>
+    <string name="today_eaten_vs_burned">Comido frente a gastado</string>
+    <string name="today_no_meals_period">Aún no hay comidas registradas en este periodo</string>
+    <plurals name="today_days_in_goal">
+        <item quantity="one">de %d día apuntado dentro del objetivo (±10 %%)</item>
+        <item quantity="many">de %d días apuntados dentro del objetivo (±10 %%)</item>
+        <item quantity="other">de %d días apuntados dentro del objetivo (±10 %%)</item>
+    </plurals>
+    <string name="today_eaten_weekly">Comido (media semanal)</string>
+    <string name="today_watch_burn">Gasto del reloj</string>
+    <string name="today_real_tdee">Gasto real estimado: %1$s kcal/día</string>
+    <string name="today_real_tdee_basis">Con lo que has comido y cómo ha cambiado tu peso.</string>
+    <string name="today_real_tdee_basis_watch">Con lo que has comido y cómo ha cambiado tu peso. Tu reloj dice %1$s.</string>
+    <string name="today_real_tdee_pending">El gasto real estimado aparece con 3 semanas de pesajes y comidas registradas.</string>
+    <string name="today_avg_macros">Macros medios</string>
+    <string name="today_no_meals_logged_period">Sin comidas apuntadas en este periodo</string>
+    <string name="today_kcal_per_day">kcal al día</string>
+    <string name="today_hide_nutrients">Ocultar nutrientes</string>
+    <string name="today_show_nutrients">Ver nutrientes</string>
+    <string name="today_date_range">Del %1$s al %2$s</string>
+    <string name="today_activity">Actividad</string>
+    <string name="today_activity_since">Medias con los datos del reloj desde el %1$s</string>
+    <string name="today_km_per_week">km por semana</string>
+    <string name="today_workouts_per_week">entrenos por semana</string>
+    <string name="today_avg_steps">pasos de media</string>
+    <string name="today_avg_sleep">de sueño medio</string>
+    <string name="today_habits">Hábitos</string>
+    <string name="today_hide">Ocultar</string>
+    <string name="today_show">Ver</string>
+    <string name="today_top_foods">Lo que más comes</string>
+    <plurals name="today_times">
+        <item quantity="one">%d vez</item>
+        <item quantity="many">%d veces</item>
+        <item quantity="other">%d veces</item>
+    </plurals>
+    <string name="today_meal_time">%1$s: hacia las %2$s</string>
+    <string name="today_avg_water">Agua media: %1$s L</string>
+    <string name="today_eta_reached">Ya estás en tu peso objetivo (%1$s).</string>
+    <string name="today_eta_not_approaching">Con el ritmo de las últimas 4 semanas no te acercas a tu objetivo de %1$s.</string>
+    <string name="today_eta_on">A este ritmo llegas a %1$s hacia el %2$s (%3$s).</string>
+    <string name="today_eta_one_week">en una semana</string>
+    <plurals name="today_eta_weeks">
+        <item quantity="one">unas %d semana</item>
+        <item quantity="many">unas %d semanas</item>
+        <item quantity="other">unas %d semanas</item>
+    </plurals>
+
+    <!-- Widget -->
+    <string name="today_mascot">Mascota</string>
+    <plurals name="today_widget_log_today">
+        <item quantity="one">día · apunta hoy</item>
+        <item quantity="many">días · apunta hoy</item>
+        <item quantity="other">días · apunta hoy</item>
+    </plurals>
+    <string name="today_scan">Escanear</string>
+
+    <!-- Reminders -->
+    <string name="today_reminder_title">¿Qué has comido hoy?</string>
+    <string name="today_reminder_text">Apúntalo en un toque y no pierdas la racha.</string>
+    <string name="today_reminder_channel">Recordatorios</string>
+    <string name="today_reminder_channel_description">Aviso suave si a cierta hora no has registrado nada</string>
+
+    <!-- Privacy -->
+    <string name="today_privacy_title">Privacidad</string>
+    <string name="today_privacy_health">Migas es una app personal sin servidor ni cuentas. Lee de Health Connect las calorías, el peso, los pasos, el sueño, la frecuencia cardiaca en reposo y los entrenamientos que escribe la app de tu reloj (Garmin Connect, Samsung Health, Fitbit…), solo para mostrarlos y calcular tu objetivo diario.</string>
+    <string name="today_privacy_water">Escribe en Health Connect el agua que registras y el peso que importas de un CSV. Ningún dato de salud sale del móvil, salvo lo que tú exportes.</string>
+    <string name="today_privacy_ai">Si configuras la IA, se envían al proveedor que elijas (NanoGPT o Anthropic, la empresa de Claude) las frases que dictas y las fotos de etiquetas y platos para interpretarlas; nunca datos de Health Connect.</string>
+    <string name="today_close">Cerrar</string>
+
+    <!-- Errors shown in a snackbar -->
+    <string name="today_error_amount">cantidad fuera de rango</string>
+    <string name="today_error_combo_gone">el combo ya no existe</string>
+    <string name="today_error_water">cantidad de agua fuera de rango</string>
+    <string name="today_error_weight">peso fuera de rango</string>
+    <string name="today_error_height">altura fuera de rango</string>
+    <string name="today_error_birth_future">la fecha de nacimiento es futura</string>
+    <string name="today_error_age">edad fuera de rango</string>
+    <string name="today_error_macros">reparto de macros fuera de rango</string>
+    <string name="today_error_adjustment">ajuste fuera de rango</string>
+    <string name="today_error_resting">calorías en reposo fuera de rango</string>
+</resources>

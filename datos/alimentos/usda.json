@@ -1,0 +1,62 @@
+[
+ {
+  "fdc_id": 167879,
+  "description": "Pork, cured, shoulder, arm picnic, separable lean and fat, roasted",
+  "sugars": 0.0,
+  "fat": 21.35,
+  "carbs": 0.0,
+  "kcal": 280.0,
+  "fiber": 0.0,
+  "salt": 2.68,
+  "saturated_fat": 7.67,
+  "protein": 20.43
+ },
+ {
+  "fdc_id": 168411,
+  "description": "Edamame, frozen, prepared",
+  "fat": 5.2,
+  "fiber": 5.2,
+  "saturated_fat": 0.62,
+  "salt": 0.015,
+  "carbs": 8.91,
+  "kcal": 121.0,
+  "protein": 11.91,
+  "sugars": 2.18
+ },
+ {
+  "fdc_id": 171248,
+  "description": "Cheese, ricotta, part skim milk",
+  "sugars": 0.31,
+  "salt": 0.247,
+  "fiber": 0.0,
+  "protein": 11.39,
+  "saturated_fat": 4.927,
+  "fat": 7.91,
+  "carbs": 5.14,
+  "kcal": 138.0
+ },
+ {
+  "fdc_id": 173177,
+  "description": "Beverages, Whey protein powder isolate",
+  "fat": 1.16,
+  "carbs": 29.07,
+  "kcal": 359.0,
+  "sugars": 1.16,
+  "saturated_fat": 0.581,
+  "protein": 58.14,
+  "fiber": 0.0,
+  "salt": 0.93
+ },
+ {
+  "fdc_id": 174275,
+  "description": "Soy flour, defatted",
+  "saturated_fat": 0.136,
+  "fiber": 17.5,
+  "salt": 0.05,
+  "fat": 1.22,
+  "carbs": 33.92,
+  "kcal": 327.0,
+  "sugars": 16.42,
+  "protein": 51.46
+ }
+]

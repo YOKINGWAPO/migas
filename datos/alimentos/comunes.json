@@ -1,0 +1,1682 @@
+[
+ {
+  "name": "Plátano",
+  "name_en": "Banana",
+  "serving": "1 pieza mediana",
+  "serving_en": "1 medium piece",
+  "grams": 120,
+  "code": 13005
+ },
+ {
+  "name": "Manzana",
+  "name_en": "Apple",
+  "serving": "1 pieza mediana",
+  "serving_en": "1 medium piece",
+  "grams": 160,
+  "code": 13396
+ },
+ {
+  "name": "Pera",
+  "name_en": "Pear",
+  "serving": "1 pieza mediana",
+  "serving_en": "1 medium piece",
+  "grams": 160,
+  "code": 13397
+ },
+ {
+  "name": "Naranja",
+  "name_en": "Orange",
+  "serving": "1 pieza mediana",
+  "serving_en": "1 medium piece",
+  "grams": 180,
+  "code": 13034
+ },
+ {
+  "name": "Mandarina",
+  "name_en": "Mandarin",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 80,
+  "code": 13024
+ },
+ {
+  "name": "Limón",
+  "name_en": "Lemon",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 100,
+  "code": 13009
+ },
+ {
+  "name": "Pomelo",
+  "name_en": "Grapefruit",
+  "serving": "1/2 pieza",
+  "serving_en": "1/2 piece",
+  "grams": 150,
+  "code": 13040
+ },
+ {
+  "name": "Uvas",
+  "name_en": "Grapes",
+  "serving": "1 racimo pequeño",
+  "serving_en": "1 small bunch",
+  "grams": 100,
+  "code": 13395
+ },
+ {
+  "name": "Fresas",
+  "name_en": "Strawberries",
+  "serving": "1 taza",
+  "serving_en": "1 cup",
+  "grams": 150,
+  "code": 13014
+ },
+ {
+  "name": "Kiwi",
+  "name_en": "Kiwi",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 90,
+  "code": 13021
+ },
+ {
+  "name": "Melocotón",
+  "name_en": "Peach",
+  "serving": "1 pieza mediana",
+  "serving_en": "1 medium piece",
+  "grams": 150,
+  "code": 13398
+ },
+ {
+  "name": "Nectarina",
+  "name_en": "Nectarine",
+  "serving": "1 pieza mediana",
+  "serving_en": "1 medium piece",
+  "grams": 140,
+  "code": 13399
+ },
+ {
+  "name": "Albaricoque",
+  "name_en": "Apricot",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 40,
+  "code": 13000
+ },
+ {
+  "name": "Ciruela",
+  "name_en": "Plum",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 60,
+  "code": 13100
+ },
+ {
+  "name": "Cereza",
+  "name_en": "Cherries",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 80,
+  "code": 13008
+ },
+ {
+  "name": "Sandía",
+  "name_en": "Watermelon",
+  "serving": "1 tajada",
+  "serving_en": "1 slice",
+  "grams": 250,
+  "code": 13036
+ },
+ {
+  "name": "Melón",
+  "name_en": "Melon",
+  "serving": "1 tajada",
+  "serving_en": "1 slice",
+  "grams": 200,
+  "code": 13026
+ },
+ {
+  "name": "Piña",
+  "name_en": "Pineapple",
+  "serving": "1 rodaja",
+  "serving_en": "1 slice",
+  "grams": 80,
+  "code": 13002
+ },
+ {
+  "name": "Mango",
+  "name_en": "Mango",
+  "serving": "1/2 pieza",
+  "serving_en": "1/2 piece",
+  "grams": 150,
+  "code": 13025
+ },
+ {
+  "name": "Aguacate",
+  "name_en": "Avocado",
+  "serving": "1/2 pieza",
+  "serving_en": "1/2 piece",
+  "grams": 100,
+  "code": 13004
+ },
+ {
+  "name": "Higo",
+  "name_en": "Fig",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 50,
+  "code": 13012
+ },
+ {
+  "name": "Granada",
+  "name_en": "Pomegranate",
+  "serving": "1/2 pieza",
+  "serving_en": "1/2 piece",
+  "grams": 100,
+  "code": 13018
+ },
+ {
+  "name": "Arándanos",
+  "name_en": "Blueberries",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 50,
+  "code": 13028
+ },
+ {
+  "name": "Frambuesas",
+  "name_en": "Raspberries",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 50,
+  "code": 13015
+ },
+ {
+  "name": "Caqui",
+  "name_en": "Persimmon",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 180,
+  "code": 13066
+ },
+ {
+  "name": "Chirimoya",
+  "name_en": "Custard apple (cherimoya)",
+  "serving": "1/2 pieza",
+  "serving_en": "1/2 piece",
+  "grams": 150,
+  "code": 13056
+ },
+ {
+  "name": "Dátil seco",
+  "name_en": "Dried date",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 8,
+  "code": 13011
+ },
+ {
+  "name": "Pasas",
+  "name_en": "Raisins",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 30,
+  "code": 13046
+ },
+ {
+  "name": "Ciruela pasa",
+  "name_en": "Prune",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 10,
+  "code": 13042
+ },
+ {
+  "name": "Coco",
+  "name_en": "Coconut",
+  "serving": "1 trozo",
+  "serving_en": "1 piece",
+  "grams": 40,
+  "code": 15006
+ },
+ {
+  "name": "Tomate",
+  "name_en": "Tomato",
+  "serving": "1 pieza mediana",
+  "serving_en": "1 medium piece",
+  "grams": 150,
+  "code": 20385
+ },
+ {
+  "name": "Tomate triturado en conserva",
+  "name_en": "Canned crushed tomato",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 15,
+  "code": 20137
+ },
+ {
+  "name": "Lechuga",
+  "name_en": "Lettuce",
+  "serving": "1 plato",
+  "serving_en": "1 plate",
+  "grams": 80,
+  "code": 20031
+ },
+ {
+  "name": "Cebolla",
+  "name_en": "Onion",
+  "serving": "1 pieza mediana",
+  "serving_en": "1 medium piece",
+  "grams": 110,
+  "code": 20034
+ },
+ {
+  "name": "Ajo",
+  "name_en": "Garlic",
+  "serving": "1 diente",
+  "serving_en": "1 clove",
+  "grams": 5,
+  "code": 11000
+ },
+ {
+  "name": "Zanahoria",
+  "name_en": "Carrot",
+  "serving": "1 pieza mediana",
+  "serving_en": "1 medium piece",
+  "grams": 80,
+  "code": 20009
+ },
+ {
+  "name": "Pimiento rojo",
+  "name_en": "Red pepper",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 150,
+  "code": 20087
+ },
+ {
+  "name": "Pimiento verde",
+  "name_en": "Green pepper",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 120,
+  "code": 20085
+ },
+ {
+  "name": "Pepino",
+  "name_en": "Cucumber",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 200,
+  "code": 20019
+ },
+ {
+  "name": "Calabacín",
+  "name_en": "Zucchini",
+  "serving": "1 pieza mediana",
+  "serving_en": "1 medium piece",
+  "grams": 200,
+  "code": 20020
+ },
+ {
+  "name": "Berenjena",
+  "name_en": "Eggplant",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 250,
+  "code": 20053
+ },
+ {
+  "name": "Brócoli",
+  "name_en": "Broccoli",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 20057
+ },
+ {
+  "name": "Coliflor",
+  "name_en": "Cauliflower",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 20016
+ },
+ {
+  "name": "Espinacas",
+  "name_en": "Spinach",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 20059
+ },
+ {
+  "name": "Acelgas",
+  "name_en": "Swiss chard",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 20301
+ },
+ {
+  "name": "Judías verdes",
+  "name_en": "Green beans",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 20061
+ },
+ {
+  "name": "Guisantes",
+  "name_en": "Peas",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 100,
+  "code": 20072
+ },
+ {
+  "name": "Champiñón",
+  "name_en": "Mushrooms",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 100,
+  "code": 20056
+ },
+ {
+  "name": "Espárrago verde",
+  "name_en": "Green asparagus",
+  "serving": "1 manojo",
+  "serving_en": "1 bunch",
+  "grams": 100,
+  "code": 20279
+ },
+ {
+  "name": "Espárrago blanco en conserva",
+  "name_en": "Canned white asparagus",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 20,
+  "code": 20076
+ },
+ {
+  "name": "Alcachofa",
+  "name_en": "Artichoke",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 100,
+  "code": 20052
+ },
+ {
+  "name": "Puerro",
+  "name_en": "Leek",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 100,
+  "code": 20039
+ },
+ {
+  "name": "Apio",
+  "name_en": "Celery",
+  "serving": "1 rama",
+  "serving_en": "1 stalk",
+  "grams": 40,
+  "code": 20023
+ },
+ {
+  "name": "Calabaza",
+  "name_en": "Pumpkin",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 20044
+ },
+ {
+  "name": "Remolacha cocida",
+  "name_en": "Beetroot, cooked",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 80,
+  "code": 20003
+ },
+ {
+  "name": "Rúcula",
+  "name_en": "Arugula",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 20,
+  "code": 20217
+ },
+ {
+  "name": "Canónigos",
+  "name_en": "Lamb's lettuce",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 30,
+  "code": 20099
+ },
+ {
+  "name": "Col",
+  "name_en": "Cabbage",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 20116
+ },
+ {
+  "name": "Lombarda",
+  "name_en": "Red cabbage",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 20014
+ },
+ {
+  "name": "Maíz dulce en conserva",
+  "name_en": "Canned sweet corn",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 20,
+  "code": 20066
+ },
+ {
+  "name": "Patata",
+  "name_en": "Potato",
+  "serving": "1 pieza mediana",
+  "serving_en": "1 medium piece",
+  "grams": 200,
+  "code": 4008
+ },
+ {
+  "name": "Patata cocida",
+  "name_en": "Boiled potato",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 200,
+  "code": 4003
+ },
+ {
+  "name": "Patatas fritas caseras",
+  "name_en": "Homemade fries",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 4032
+ },
+ {
+  "name": "Boniato",
+  "name_en": "Sweet potato",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 200,
+  "code": 4101
+ },
+ {
+  "name": "Lentejas secas",
+  "name_en": "Lentils, dry",
+  "serving": "1 ración en crudo",
+  "serving_en": "1 serving, dry",
+  "grams": 70,
+  "code": 20359
+ },
+ {
+  "name": "Lentejas cocidas",
+  "name_en": "Lentils, cooked",
+  "serving": "1 plato",
+  "serving_en": "1 plate",
+  "grams": 250,
+  "code": 20360
+ },
+ {
+  "name": "Garbanzos secos",
+  "name_en": "Chickpeas, dry",
+  "serving": "1 ración en crudo",
+  "serving_en": "1 serving, dry",
+  "grams": 70,
+  "code": 20516
+ },
+ {
+  "name": "Garbanzos cocidos",
+  "name_en": "Chickpeas, cooked",
+  "serving": "1 plato",
+  "serving_en": "1 plate",
+  "grams": 250,
+  "code": 20507
+ },
+ {
+  "name": "Alubias blancas secas",
+  "name_en": "White beans, dry",
+  "serving": "1 ración en crudo",
+  "serving_en": "1 serving, dry",
+  "grams": 70,
+  "code": 20501
+ },
+ {
+  "name": "Alubias cocidas",
+  "name_en": "Beans, cooked",
+  "serving": "1 plato",
+  "serving_en": "1 plate",
+  "grams": 250,
+  "code": 20502
+ },
+ {
+  "name": "Tofu",
+  "name_en": "Tofu",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 100,
+  "code": 20904
+ },
+ {
+  "name": "Hummus",
+  "name_en": "Hummus",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 20,
+  "code": 25621
+ },
+ {
+  "name": "Arroz blanco",
+  "name_en": "White rice, dry",
+  "serving": "1 ración en crudo",
+  "serving_en": "1 serving, dry",
+  "grams": 80,
+  "code": 9100
+ },
+ {
+  "name": "Arroz blanco cocido",
+  "name_en": "White rice, cooked",
+  "serving": "1 plato",
+  "serving_en": "1 plate",
+  "grams": 200,
+  "code": 9104
+ },
+ {
+  "name": "Arroz integral",
+  "name_en": "Brown rice, dry",
+  "serving": "1 ración en crudo",
+  "serving_en": "1 serving, dry",
+  "grams": 80,
+  "code": 9102
+ },
+ {
+  "name": "Pasta",
+  "name_en": "Pasta, dry",
+  "serving": "1 ración en crudo",
+  "serving_en": "1 serving, dry",
+  "grams": 80,
+  "code": 9810
+ },
+ {
+  "name": "Pasta cocida",
+  "name_en": "Pasta, cooked",
+  "serving": "1 plato",
+  "serving_en": "1 plate",
+  "grams": 200,
+  "code": 9811
+ },
+ {
+  "name": "Pasta integral",
+  "name_en": "Whole wheat pasta, dry",
+  "serving": "1 ración en crudo",
+  "serving_en": "1 serving, dry",
+  "grams": 80,
+  "code": 9870
+ },
+ {
+  "name": "Cuscús",
+  "name_en": "Couscous, dry",
+  "serving": "1 ración en crudo",
+  "serving_en": "1 serving, dry",
+  "grams": 70,
+  "code": 9681
+ },
+ {
+  "name": "Quinoa",
+  "name_en": "Quinoa, dry",
+  "serving": "1 ración en crudo",
+  "serving_en": "1 serving, dry",
+  "grams": 70,
+  "code": 9340
+ },
+ {
+  "name": "Copos de avena",
+  "name_en": "Rolled oats",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 40,
+  "code": 32140
+ },
+ {
+  "name": "Pan blanco (barra)",
+  "name_en": "White bread (baguette)",
+  "serving": "1 trozo de barra",
+  "serving_en": "1 piece of baguette",
+  "grams": 60,
+  "code": 7001
+ },
+ {
+  "name": "Pan integral",
+  "name_en": "Whole wheat bread",
+  "serving": "1 rebanada",
+  "serving_en": "1 slice",
+  "grams": 35,
+  "code": 7110
+ },
+ {
+  "name": "Pan de molde",
+  "name_en": "Sliced bread",
+  "serving": "1 rebanada",
+  "serving_en": "1 slice",
+  "grams": 25,
+  "code": 7200
+ },
+ {
+  "name": "Pan de molde integral",
+  "name_en": "Whole wheat sliced bread",
+  "serving": "1 rebanada",
+  "serving_en": "1 slice",
+  "grams": 25,
+  "code": 7111
+ },
+ {
+  "name": "Pan tostado (biscote)",
+  "name_en": "Rusk (toasted bread)",
+  "serving": "1 biscote",
+  "serving_en": "1 rusk",
+  "grams": 8,
+  "code": 7300
+ },
+ {
+  "name": "Tortilla de trigo",
+  "name_en": "Wheat tortilla",
+  "serving": "1 unidad",
+  "serving_en": "1 unit",
+  "grams": 40,
+  "code": 7815
+ },
+ {
+  "name": "Harina de trigo",
+  "name_en": "Wheat flour",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 10,
+  "code": 9435
+ },
+ {
+  "name": "Maíz palomitas",
+  "name_en": "Popcorn",
+  "serving": "1 bol",
+  "serving_en": "1 bowl",
+  "grams": 30,
+  "code": 9231
+ },
+ {
+  "name": "Cereales de desayuno (copos de maíz)",
+  "name_en": "Breakfast cereal (corn flakes)",
+  "serving": "1 bol",
+  "serving_en": "1 bowl",
+  "grams": 30,
+  "code": 32014
+ },
+ {
+  "name": "Muesli",
+  "name_en": "Muesli",
+  "serving": "1 bol",
+  "serving_en": "1 bowl",
+  "grams": 50,
+  "code": 32004
+ },
+ {
+  "name": "Galleta María",
+  "name_en": "Maria cookie",
+  "serving": "1 galleta",
+  "serving_en": "1 cookie",
+  "grams": 6,
+  "code": 24001
+ },
+ {
+  "name": "Magdalena",
+  "name_en": "Muffin (magdalena)",
+  "serving": "1 unidad",
+  "serving_en": "1 unit",
+  "grams": 30,
+  "code": 24632
+ },
+ {
+  "name": "Croissant",
+  "name_en": "Croissant",
+  "serving": "1 unidad",
+  "serving_en": "1 unit",
+  "grams": 55,
+  "code": 7603
+ },
+ {
+  "name": "Pechuga de pollo",
+  "name_en": "Chicken breast",
+  "serving": "1 filete",
+  "serving_en": "1 fillet",
+  "grams": 150,
+  "code": 36017
+ },
+ {
+  "name": "Muslo de pollo",
+  "name_en": "Chicken thigh",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 100,
+  "code": 36024
+ },
+ {
+  "name": "Pollo asado",
+  "name_en": "Roast chicken",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 36005
+ },
+ {
+  "name": "Pavo pechuga",
+  "name_en": "Turkey breast",
+  "serving": "1 filete",
+  "serving_en": "1 fillet",
+  "grams": 150,
+  "code": 36304
+ },
+ {
+  "name": "Ternera magra",
+  "name_en": "Lean beef",
+  "serving": "1 filete",
+  "serving_en": "1 fillet",
+  "grams": 150,
+  "code": 6160
+ },
+ {
+  "name": "Carne picada mixta",
+  "name_en": "Mixed minced meat",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 125,
+  "code": 6254
+ },
+ {
+  "name": "Hamburguesa de ternera",
+  "name_en": "Beef burger",
+  "serving": "1 unidad",
+  "serving_en": "1 unit",
+  "grams": 100,
+  "code": 6254
+ },
+ {
+  "name": "Lomo de cerdo",
+  "name_en": "Pork loin",
+  "serving": "1 filete",
+  "serving_en": "1 fillet",
+  "grams": 150,
+  "code": 28480
+ },
+ {
+  "name": "Chuleta de cerdo",
+  "name_en": "Pork chop",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 150,
+  "code": 28100
+ },
+ {
+  "name": "Costillas de cerdo",
+  "name_en": "Pork ribs",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 200,
+  "code": 28400
+ },
+ {
+  "name": "Cordero (pierna)",
+  "name_en": "Lamb (leg)",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 21502
+ },
+ {
+  "name": "Conejo",
+  "name_en": "Rabbit",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 34001
+ },
+ {
+  "name": "Solomillo de cerdo",
+  "name_en": "Pork tenderloin",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 28204
+ },
+ {
+  "name": "Hígado de ternera",
+  "name_en": "Beef liver",
+  "serving": "1 filete",
+  "serving_en": "1 fillet",
+  "grams": 100,
+  "code": 40106
+ },
+ {
+  "name": "Salchicha fresca",
+  "name_en": "Fresh sausage",
+  "serving": "1 unidad",
+  "serving_en": "1 unit",
+  "grams": 50,
+  "code": 30110
+ },
+ {
+  "name": "Jamón serrano",
+  "name_en": "Serrano ham",
+  "serving": "1 loncha",
+  "serving_en": "1 slice",
+  "grams": 15,
+  "code": 28845
+ },
+ {
+  "name": "Jamón cocido",
+  "name_en": "Cooked ham",
+  "serving": "1 loncha",
+  "serving_en": "1 slice",
+  "grams": 20,
+  "code": 28900
+ },
+ {
+  "name": "Pechuga de pavo fiambre",
+  "name_en": "Turkey breast cold cut",
+  "serving": "1 loncha",
+  "serving_en": "1 slice",
+  "grams": 15,
+  "code": 28964
+ },
+ {
+  "name": "Chorizo",
+  "name_en": "Chorizo",
+  "serving": "1 rodaja",
+  "serving_en": "1 slice",
+  "grams": 10,
+  "code": 30315
+ },
+ {
+  "name": "Salchichón",
+  "name_en": "Salchichón (dry-cured sausage)",
+  "serving": "1 rodaja",
+  "serving_en": "1 slice",
+  "grams": 8,
+  "code": 30300
+ },
+ {
+  "name": "Lomo embuchado",
+  "name_en": "Cured pork loin",
+  "serving": "1 loncha",
+  "serving_en": "1 slice",
+  "grams": 10,
+  "code": 28850
+ },
+ {
+  "name": "Bacon",
+  "name_en": "Bacon",
+  "serving": "1 loncha",
+  "serving_en": "1 slice",
+  "grams": 15,
+  "code": 28502
+ },
+ {
+  "name": "Morcilla",
+  "name_en": "Blood sausage (morcilla)",
+  "serving": "1 rodaja",
+  "serving_en": "1 slice",
+  "grams": 30,
+  "code": 8703
+ },
+ {
+  "name": "Mortadela",
+  "name_en": "Mortadella",
+  "serving": "1 loncha",
+  "serving_en": "1 slice",
+  "grams": 15,
+  "code": 30789
+ },
+ {
+  "name": "Salmón",
+  "name_en": "Salmon",
+  "serving": "1 filete",
+  "serving_en": "1 fillet",
+  "grams": 150,
+  "code": 26036
+ },
+ {
+  "name": "Salmón ahumado",
+  "name_en": "Smoked salmon",
+  "serving": "1 loncha",
+  "serving_en": "1 slice",
+  "grams": 20,
+  "code": 26037
+ },
+ {
+  "name": "Merluza",
+  "name_en": "Hake",
+  "serving": "1 filete",
+  "serving_en": "1 fillet",
+  "grams": 150,
+  "code": 26044
+ },
+ {
+  "name": "Bacalao fresco",
+  "name_en": "Fresh cod",
+  "serving": "1 filete",
+  "serving_en": "1 fillet",
+  "grams": 150,
+  "code": 26043
+ },
+ {
+  "name": "Bacalao desalado",
+  "name_en": "Desalted cod",
+  "serving": "1 lomo",
+  "serving_en": "1 fillet",
+  "grams": 150,
+  "code": 26024
+ },
+ {
+  "name": "Atún fresco",
+  "name_en": "Fresh tuna",
+  "serving": "1 filete",
+  "serving_en": "1 fillet",
+  "grams": 150,
+  "code": 26069
+ },
+ {
+  "name": "Atún en aceite (escurrido)",
+  "name_en": "Tuna in oil (drained)",
+  "serving": "1 lata",
+  "serving_en": "1 can",
+  "grams": 56,
+  "code": 26180
+ },
+ {
+  "name": "Atún al natural",
+  "name_en": "Tuna in water",
+  "serving": "1 lata",
+  "serving_en": "1 can",
+  "grams": 56,
+  "code": 26039
+ },
+ {
+  "name": "Sardina",
+  "name_en": "Sardine",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 50,
+  "code": 26065
+ },
+ {
+  "name": "Sardinas en aceite",
+  "name_en": "Sardines in oil",
+  "serving": "1 lata",
+  "serving_en": "1 can",
+  "grams": 85,
+  "code": 26034
+ },
+ {
+  "name": "Boquerón",
+  "name_en": "Anchovy (fresh)",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 100,
+  "code": 26079
+ },
+ {
+  "name": "Caballa",
+  "name_en": "Mackerel",
+  "serving": "1 filete",
+  "serving_en": "1 fillet",
+  "grams": 120,
+  "code": 26051
+ },
+ {
+  "name": "Lubina",
+  "name_en": "Sea bass",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 200,
+  "code": 26072
+ },
+ {
+  "name": "Dorada",
+  "name_en": "Sea bream",
+  "serving": "1 pieza",
+  "serving_en": "1 piece",
+  "grams": 200,
+  "code": 26088
+ },
+ {
+  "name": "Lenguado",
+  "name_en": "Sole",
+  "serving": "1 filete",
+  "serving_en": "1 fillet",
+  "grams": 150,
+  "code": 26058
+ },
+ {
+  "name": "Gambas",
+  "name_en": "Shrimp",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 100,
+  "code": 10021
+ },
+ {
+  "name": "Langostinos cocidos",
+  "name_en": "Prawns, cooked",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 100,
+  "code": 10007
+ },
+ {
+  "name": "Mejillones",
+  "name_en": "Mussels",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 100,
+  "code": 10014
+ },
+ {
+  "name": "Calamar",
+  "name_en": "Squid",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 10001
+ },
+ {
+  "name": "Pulpo cocido",
+  "name_en": "Octopus, cooked",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 150,
+  "code": 10079
+ },
+ {
+  "name": "Surimi (palitos de cangrejo)",
+  "name_en": "Surimi (crab sticks)",
+  "serving": "1 palito",
+  "serving_en": "1 stick",
+  "grams": 17,
+  "code": 26046
+ },
+ {
+  "name": "Huevo",
+  "name_en": "Egg",
+  "serving": "1 unidad",
+  "serving_en": "1 egg",
+  "grams": 60,
+  "code": 22000
+ },
+ {
+  "name": "Clara de huevo",
+  "name_en": "Egg white",
+  "serving": "1 clara",
+  "serving_en": "1 egg white",
+  "grams": 35,
+  "code": 22001
+ },
+ {
+  "name": "Tortilla de patata",
+  "name_en": "Spanish potato omelette",
+  "serving": "1 pincho",
+  "serving_en": "1 slice",
+  "grams": 120,
+  "code": 22510
+ },
+ {
+  "name": "Leche entera",
+  "name_en": "Whole milk",
+  "serving": "1 vaso",
+  "serving_en": "1 glass",
+  "grams": 250,
+  "code": 19016
+ },
+ {
+  "name": "Leche semidesnatada",
+  "name_en": "Semi-skimmed milk",
+  "serving": "1 vaso",
+  "serving_en": "1 glass",
+  "grams": 250,
+  "code": 19033
+ },
+ {
+  "name": "Leche desnatada",
+  "name_en": "Skimmed milk",
+  "serving": "1 vaso",
+  "serving_en": "1 glass",
+  "grams": 250,
+  "code": 19051
+ },
+ {
+  "name": "Bebida de avena",
+  "name_en": "Oat drink",
+  "serving": "1 vaso",
+  "serving_en": "1 glass",
+  "grams": 250,
+  "code": 18899
+ },
+ {
+  "name": "Bebida de soja",
+  "name_en": "Soy drink",
+  "serving": "1 vaso",
+  "serving_en": "1 glass",
+  "grams": 250,
+  "code": 18900
+ },
+ {
+  "name": "Bebida de almendra",
+  "name_en": "Almond drink",
+  "serving": "1 vaso",
+  "serving_en": "1 glass",
+  "grams": 250,
+  "code": 18107
+ },
+ {
+  "name": "Yogur natural",
+  "name_en": "Plain yogurt",
+  "serving": "1 unidad",
+  "serving_en": "1 unit",
+  "grams": 125,
+  "code": 19593
+ },
+ {
+  "name": "Yogur natural desnatado",
+  "name_en": "Plain yogurt, fat-free",
+  "serving": "1 unidad",
+  "serving_en": "1 unit",
+  "grams": 125,
+  "code": 19594
+ },
+ {
+  "name": "Yogur griego",
+  "name_en": "Greek yogurt",
+  "serving": "1 unidad",
+  "serving_en": "1 unit",
+  "grams": 125,
+  "code": 19860
+ },
+ {
+  "name": "Yogur de sabores",
+  "name_en": "Flavored yogurt",
+  "serving": "1 unidad",
+  "serving_en": "1 unit",
+  "grams": 125,
+  "code": 19575
+ },
+ {
+  "name": "Kéfir",
+  "name_en": "Kefir",
+  "serving": "1 vaso",
+  "serving_en": "1 glass",
+  "grams": 200,
+  "code": 19865
+ },
+ {
+  "name": "Queso fresco batido 0%",
+  "name_en": "Whipped fresh cheese 0%",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 30,
+  "code": 19644
+ },
+ {
+  "name": "Queso semicurado",
+  "name_en": "Semi-cured cheese",
+  "serving": "1 loncha",
+  "serving_en": "1 slice",
+  "grams": 20,
+  "code": 12736
+ },
+ {
+  "name": "Queso en lonchas (tipo sándwich)",
+  "name_en": "Sliced cheese (sandwich type)",
+  "serving": "1 loncha",
+  "serving_en": "1 slice",
+  "grams": 20,
+  "code": 12300
+ },
+ {
+  "name": "Queso mozzarella",
+  "name_en": "Mozzarella",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 60,
+  "code": 19590
+ },
+ {
+  "name": "Queso parmesano",
+  "name_en": "Parmesan",
+  "serving": "1 cucharada rallado",
+  "serving_en": "1 tablespoon, grated",
+  "grams": 10,
+  "code": 12120
+ },
+ {
+  "name": "Queso de cabra",
+  "name_en": "Goat cheese",
+  "serving": "1 rodaja",
+  "serving_en": "1 slice",
+  "grams": 30,
+  "code": 12812
+ },
+ {
+  "name": "Queso crema (untar)",
+  "name_en": "Cream cheese (spread)",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 15,
+  "code": 12068
+ },
+ {
+  "name": "Nata para cocinar",
+  "name_en": "Cooking cream",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 15,
+  "code": 19403
+ },
+ {
+  "name": "Mantequilla",
+  "name_en": "Butter",
+  "serving": "1 porción",
+  "serving_en": "1 portion",
+  "grams": 10,
+  "code": 16400
+ },
+ {
+  "name": "Margarina",
+  "name_en": "Margarine",
+  "serving": "1 porción",
+  "serving_en": "1 portion",
+  "grams": 10,
+  "code": 16590
+ },
+ {
+  "name": "Natillas",
+  "name_en": "Custard (natillas)",
+  "serving": "1 unidad",
+  "serving_en": "1 unit",
+  "grams": 125,
+  "code": 39230
+ },
+ {
+  "name": "Flan",
+  "name_en": "Flan",
+  "serving": "1 unidad",
+  "serving_en": "1 unit",
+  "grams": 100,
+  "code": 19674
+ },
+ {
+  "name": "Helado de vainilla",
+  "name_en": "Vanilla ice cream",
+  "serving": "1 bola",
+  "serving_en": "1 scoop",
+  "grams": 60,
+  "code": 39527
+ },
+ {
+  "name": "Aceite de oliva",
+  "name_en": "Olive oil",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 10,
+  "code": 17270
+ },
+ {
+  "name": "Aceite de girasol",
+  "name_en": "Sunflower oil",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 10,
+  "code": 17440
+ },
+ {
+  "name": "Mayonesa",
+  "name_en": "Mayonnaise",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 15,
+  "code": 11054
+ },
+ {
+  "name": "Kétchup",
+  "name_en": "Ketchup",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 15,
+  "code": 11008
+ },
+ {
+  "name": "Mostaza",
+  "name_en": "Mustard",
+  "serving": "1 cucharadita",
+  "serving_en": "1 teaspoon",
+  "grams": 5,
+  "code": 11013
+ },
+ {
+  "name": "Tomate frito",
+  "name_en": "Tomato sauce (tomate frito)",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 20,
+  "code": 11107
+ },
+ {
+  "name": "Salsa de soja",
+  "name_en": "Soy sauce",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 15,
+  "code": 11104
+ },
+ {
+  "name": "Vinagre",
+  "name_en": "Vinegar",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 15,
+  "code": 11018
+ },
+ {
+  "name": "Almendras",
+  "name_en": "Almonds",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 30,
+  "code": 15000
+ },
+ {
+  "name": "Nueces",
+  "name_en": "Walnuts",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 30,
+  "code": 15005
+ },
+ {
+  "name": "Avellanas",
+  "name_en": "Hazelnuts",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 30,
+  "code": 15004
+ },
+ {
+  "name": "Cacahuetes tostados",
+  "name_en": "Roasted peanuts",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 30,
+  "code": 15053
+ },
+ {
+  "name": "Cacahuetes salados",
+  "name_en": "Salted peanuts",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 30,
+  "code": 15002
+ },
+ {
+  "name": "Crema de cacahuete",
+  "name_en": "Peanut butter",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 15,
+  "code": 15202
+ },
+ {
+  "name": "Pistachos",
+  "name_en": "Pistachios",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 30,
+  "code": 15044
+ },
+ {
+  "name": "Anacardos",
+  "name_en": "Cashews",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 30,
+  "code": 15054
+ },
+ {
+  "name": "Pipas de girasol",
+  "name_en": "Sunflower seeds",
+  "serving": "1 puñado",
+  "serving_en": "1 handful",
+  "grams": 30,
+  "code": 15011
+ },
+ {
+  "name": "Semillas de chía",
+  "name_en": "Chia seeds",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 10,
+  "code": 15047
+ },
+ {
+  "name": "Semillas de lino",
+  "name_en": "Flaxseeds",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 10,
+  "code": 15034
+ },
+ {
+  "name": "Aceitunas verdes",
+  "name_en": "Green olives",
+  "serving": "10 unidades",
+  "serving_en": "10 pieces",
+  "grams": 30,
+  "code": 13033
+ },
+ {
+  "name": "Aceitunas negras",
+  "name_en": "Black olives",
+  "serving": "10 unidades",
+  "serving_en": "10 pieces",
+  "grams": 30,
+  "code": 13032
+ },
+ {
+  "name": "Azúcar",
+  "name_en": "Sugar",
+  "serving": "1 cucharadita",
+  "serving_en": "1 teaspoon",
+  "grams": 5,
+  "code": 31016
+ },
+ {
+  "name": "Miel",
+  "name_en": "Honey",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 20,
+  "code": 31008
+ },
+ {
+  "name": "Mermelada",
+  "name_en": "Jam",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 20,
+  "code": 31006
+ },
+ {
+  "name": "Cacao en polvo azucarado",
+  "name_en": "Sweetened cocoa powder",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 10,
+  "code": 18101
+ },
+ {
+  "name": "Chocolate con leche",
+  "name_en": "Milk chocolate",
+  "serving": "1 onza",
+  "serving_en": "1 square",
+  "grams": 10,
+  "code": 31004
+ },
+ {
+  "name": "Chocolate negro 70%",
+  "name_en": "Dark chocolate 70%",
+  "serving": "1 onza",
+  "serving_en": "1 square",
+  "grams": 10,
+  "code": 31074
+ },
+ {
+  "name": "Crema de cacao con avellanas",
+  "name_en": "Chocolate hazelnut spread",
+  "serving": "1 cucharada",
+  "serving_en": "1 tablespoon",
+  "grams": 15,
+  "code": 31032
+ },
+ {
+  "name": "Patatas fritas de bolsa",
+  "name_en": "Potato chips",
+  "serving": "1 bolsa pequeña",
+  "serving_en": "1 small bag",
+  "grams": 40,
+  "code": 4004
+ },
+ {
+  "name": "Pizza margarita",
+  "name_en": "Margherita pizza",
+  "serving": "1 porción",
+  "serving_en": "1 portion",
+  "grams": 100,
+  "code": 25404
+ },
+ {
+  "name": "Gazpacho",
+  "name_en": "Gazpacho (cold tomato soup)",
+  "serving": "1 vaso",
+  "serving_en": "1 glass",
+  "grams": 250,
+  "code": 25967
+ },
+ {
+  "name": "Paella de marisco",
+  "name_en": "Seafood paella",
+  "serving": "1 plato",
+  "serving_en": "1 plate",
+  "grams": 300,
+  "code": 25031
+ },
+ {
+  "name": "Café solo",
+  "name_en": "Black coffee",
+  "serving": "1 taza",
+  "serving_en": "1 cup",
+  "grams": 50,
+  "code": 18071
+ },
+ {
+  "name": "Café con leche",
+  "name_en": "Coffee with milk",
+  "serving": "1 taza",
+  "serving_en": "1 cup",
+  "grams": 200,
+  "code": 18151
+ },
+ {
+  "name": "Té",
+  "name_en": "Tea",
+  "serving": "1 taza",
+  "serving_en": "1 cup",
+  "grams": 200,
+  "code": 18020
+ },
+ {
+  "name": "Zumo de naranja natural",
+  "name_en": "Fresh orange juice",
+  "serving": "1 vaso",
+  "serving_en": "1 glass",
+  "grams": 200,
+  "code": 2013
+ },
+ {
+  "name": "Refresco de cola",
+  "name_en": "Cola",
+  "serving": "1 lata",
+  "serving_en": "1 can",
+  "grams": 330,
+  "code": 18018
+ },
+ {
+  "name": "Refresco de cola zero",
+  "name_en": "Cola zero",
+  "serving": "1 lata",
+  "serving_en": "1 can",
+  "grams": 330,
+  "code": 18060
+ },
+ {
+  "name": "Cerveza",
+  "name_en": "Beer",
+  "serving": "1 caña",
+  "serving_en": "1 small beer glass",
+  "grams": 200,
+  "code": 5001
+ },
+ {
+  "name": "Cerveza sin alcohol",
+  "name_en": "Alcohol-free beer",
+  "serving": "1 caña",
+  "serving_en": "1 small beer glass",
+  "grams": 200,
+  "code": 5030
+ },
+ {
+  "name": "Vino tinto",
+  "name_en": "Red wine",
+  "serving": "1 copa",
+  "serving_en": "1 glass",
+  "grams": 150,
+  "code": 5214
+ },
+ {
+  "name": "Bebida isotónica",
+  "name_en": "Sports drink",
+  "serving": "1 botella",
+  "serving_en": "1 bottle",
+  "grams": 500,
+  "code": 18348
+ },
+ {
+  "name": "Barrita de cereales",
+  "name_en": "Cereal bar",
+  "serving": "1 barrita",
+  "serving_en": "1 bar",
+  "grams": 25,
+  "code": 31113
+ },
+ {
+  "name": "Tortitas de arroz",
+  "name_en": "Rice cakes",
+  "serving": "1 tortita",
+  "serving_en": "1 cake",
+  "grams": 8,
+  "code": 7352
+ }
+]

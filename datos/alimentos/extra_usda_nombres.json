@@ -1,0 +1,37 @@
+{
+ "168411": {
+  "name": "Edamame",
+  "name_en": "Edamame, frozen, prepared",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 100
+ },
+ "171248": {
+  "name": "Requesón",
+  "name_en": "Ricotta / requesón, part-skim",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 100
+ },
+ "173177": {
+  "name": "Proteína whey (polvo)",
+  "name_en": "Whey protein isolate (powder)",
+  "serving": "1 cacito",
+  "serving_en": "1 scoop",
+  "grams": 30
+ },
+ "174275": {
+  "name": "Soja texturizada (seca)",
+  "name_en": "Textured soy protein (dry)",
+  "serving": "1 ración",
+  "serving_en": "1 serving",
+  "grams": 50
+ },
+ "167879": {
+  "name": "Lacón",
+  "name_en": "Lacón (cured pork shoulder, cooked)",
+  "serving": "1 loncha",
+  "serving_en": "1 slice",
+  "grams": 20
+ }
+}

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Today, Diary calendar, Progress, the streak widget, reminders and privacy. -->
+<resources>
+    <!-- Today -->
+    <string name="today_goal_adjusted">Target adjusted</string>
+    <string name="today_combo_saved">Combo “%1$s” saved</string>
+    <string name="today_calculating">Calculating…</string>
+    <string name="today_setup_goal_title">Set your goal</string>
+    <string name="today_setup_goal_text">Weight, height, date of birth and goal to work out how much to eat.</string>
+    <string name="today_start">Get started</string>
+    <string name="today_health_failed">Couldn\'t read Health Connect data</string>
+    <string name="today_retry">Retry</string>
+    <string name="today_deleted">Deleted %1$s</string>
+    <string name="today_undo">Undo</string>
+    <string name="today_nothing_yesterday">Nothing in %1$s yesterday</string>
+    <plurals name="today_copied_from_yesterday">
+        <item quantity="one">Copied %d food from yesterday</item>
+        <item quantity="other">Copied %d foods from yesterday</item>
+    </plurals>
+    <string name="today_water_health_failed">Water saved; Health Connect failed: %1$s</string>
+    <string name="today_note_saved">Note saved</string>
+    <string name="today_combo_name">Combo name</string>
+    <plurals name="today_streak_days">
+        <item quantity="one">day in a row</item>
+        <item quantity="other">days in a row</item>
+    </plurals>
+    <plurals name="today_first_reward_in">
+        <item quantity="one">At %d day it earns its first reward</item>
+        <item quantity="other">At %d days it earns its first reward</item>
+    </plurals>
+    <string name="today_best_streak">Best streak: %1$d</string>
+    <string name="today_rewards_unlocked">%1$d of %2$d rewards</string>
+    <string name="today_protector_used">streak saver used</string>
+    <string name="today_tap_mascot">Tap the mascot to switch reward.</string>
+
+    <!-- Meals and water -->
+    <string name="today_add">Add</string>
+    <string name="today_collapse_meal">Collapse %1$s</string>
+    <string name="today_expand_meal">Expand %1$s</string>
+    <string name="today_add_to_meal">Add to %1$s</string>
+    <string name="today_copy_yesterday">Copy from yesterday</string>
+    <string name="today_save_as_combo">Save as combo</string>
+    <string name="today_save_combo">Save combo</string>
+    <string name="today_delete">Delete</string>
+    <string name="today_water">Water</string>
+    <plurals name="today_water_glasses">
+        <item quantity="one">%1$s of %2$d glass</item>
+        <item quantity="other">%1$s of %2$d glasses</item>
+    </plurals>
+    <string name="today_water_litres">%1$s of %2$s L</string>
+    <string name="today_remove_glass">Remove the last glass</string>
+    <string name="today_add_glass">Add a glass</string>
+
+    <!-- Day cards -->
+    <string name="today_happy_birthday">Happy birthday!</string>
+    <plurals name="today_birthday_age">
+        <item quantity="one">You turn %d today.</item>
+        <item quantity="other">You turn %d today.</item>
+    </plurals>
+    <string name="today_new_rewards">New rewards!</string>
+    <plurals name="today_new_rewards_text">
+        <item quantity="one">You\'ve logged %d day in a row. From today your mascot can also wear:</item>
+        <item quantity="other">You\'ve logged %d days in a row. From today your mascot can also wear:</item>
+    </plurals>
+    <string name="today_lets_go">Let\'s go!</string>
+    <string name="today_burn_review_title">Weekly burn check</string>
+    <string name="today_burn_review_real">Your real burn looks like %1$s kcal/day; your watch says %2$s.</string>
+    <string name="today_burn_review_explain">It comes from what you\'ve eaten and how your weight has changed over the last 4 weeks. If you\'ve left meals unlogged, the real burn comes out lower than it is.</string>
+    <string name="today_burn_review_adjust">Adjust %1$s kcal</string>
+    <string name="today_not_now">Not now</string>
+    <string name="today_combo_question">Save it as a combo?</string>
+    <plurals name="today_combo_eaten_together">
+        <item quantity="one">You\'ve eaten these together %d time in 30 days:</item>
+        <item quantity="other">You\'ve eaten these together %d times in 30 days:</item>
+    </plurals>
+    <string name="today_and">" and "</string>
+    <string name="today_no_thanks">No, thanks</string>
+    <string name="today_name">Name</string>
+    <string name="today_save">Save</string>
+    <string name="today_cancel">Cancel</string>
+    <string name="today_exercise">Exercise</string>
+    <plurals name="today_exercise_sets">
+        <item quantity="one">%d set</item>
+        <item quantity="other">%d sets</item>
+    </plurals>
+    <plurals name="today_exercise_reps">
+        <item quantity="one">%d rep</item>
+        <item quantity="other">%d reps</item>
+    </plurals>
+    <string name="today_log_exercise">Log exercise</string>
+    <string name="today_measures">Measurements</string>
+    <plurals name="today_photos">
+        <item quantity="one">%d photo</item>
+        <item quantity="other">%d photos</item>
+    </plurals>
+    <string name="today_log_measures">Log measurements</string>
+    <string name="today_day_note">Day note</string>
+    <string name="today_note_placeholder">Dinner out, party day, felt unwell…</string>
+    <string name="today_save_note">Save note</string>
+    <string name="today_add_to_day">Add to the day</string>
+    <string name="today_note">Note</string>
+
+    <!-- Energy -->
+    <string name="today_eaten_of_target">%1$s of %2$d kcal · tap the ring for details</string>
+    <string name="today_carbs">Carbs</string>
+    <string name="today_protein">Protein</string>
+    <string name="today_fat">Fat</string>
+    <string name="today_low_carbs">With this target only %1$d g of carbs are left: lower protein or fat in Goal.</string>
+    <string name="today_kcal_over">kcal over</string>
+    <string name="today_kcal_left">kcal left</string>
+    <string name="today_where_from">Where it comes from</string>
+    <string name="today_target">Target</string>
+    <string name="today_eaten">Eaten</string>
+    <string name="today_burned_so_far">Burned so far</string>
+    <string name="today_burned">Burned</string>
+    <string name="today_split">Resting %1$s + active %2$s = %3$s kcal</string>
+    <string name="today_split_forecast">Day forecast: resting %1$s + active %2$s = %3$s kcal</string>
+    <string name="today_burn_correction_note">The target includes your real-weight adjustment: %1$s kcal on top of your watch\'s burn.</string>
+    <string name="today_no_watch_resting">No watch data for this day: only your resting burn counts.</string>
+    <string name="today_no_watch_estimated">No watch data for this day: resting burn estimated from your profile.</string>
+    <string name="today_resting_estimated">Resting burn estimated from your profile. If your watch gives its resting figure, copy it into Goal so it adds up.</string>
+    <string name="today_refresh_watch">Refresh watch data</string>
+    <string name="today_nutrients">Nutrients</string>
+    <string name="today_your_watch">Your watch</string>
+    <string name="today_steps">Steps</string>
+    <string name="today_sleep">Sleep</string>
+    <string name="today_resting_hr">Resting HR</string>
+    <string name="today_sleep_duration">%1$d h %2$d min</string>
+    <string name="today_bpm">%1$d bpm</string>
+    <string name="today_nutrients_reference" formatted="false">% of the EU reference intake. Only the nutrients your foods include are shown.</string>
+
+    <!-- Diary calendar -->
+    <string name="today_prev_month">Previous month</string>
+    <string name="today_next_month">Next month</string>
+    <string name="today_in_goal">On target</string>
+    <string name="today_over">Over</string>
+    <string name="today_logged">Logged</string>
+    <string name="today_health_read_failed">Couldn\'t read Health Connect: %1$s</string>
+    <string name="today_no_meals_logged">No meals logged</string>
+    <string name="today_of_kcal">of %1$d kcal</string>
+    <string name="today_macros_line">Protein %1$d g · Carbs %2$d g · Fat %3$d g</string>
+    <string name="today_water_line">%1$s L of water</string>
+    <string name="today_open_day">Open day</string>
+    <string name="today_workout">Workout</string>
+    <string name="today_photo">Photo</string>
+
+    <!-- Progress -->
+    <string name="today_period_week">7 days</string>
+    <string name="today_period_month">30 days</string>
+    <string name="today_period_quarter">3 months</string>
+    <string name="today_period_year">Year</string>
+    <string name="today_stats_failed">Couldn\'t calculate the stats: %1$s</string>
+    <string name="today_weight">Weight</string>
+    <string name="today_no_weighins">No weigh-ins in this period (they come from your scale or your watch via Health Connect).</string>
+    <string name="today_change_since">%1$s since %2$s</string>
+    <string name="today_seven_day_mean">Average of the last 7 days</string>
+    <string name="today_weekly_rate">pace %1$s/week over the last 4 weeks</string>
+    <string name="today_eaten_vs_burned">Eaten vs burned</string>
+    <string name="today_no_meals_period">No meals logged in this period yet</string>
+    <plurals name="today_days_in_goal">
+        <item quantity="one">of %d logged day on target (±10%%)</item>
+        <item quantity="other">of %d logged days on target (±10%%)</item>
+    </plurals>
+    <string name="today_eaten_weekly">Eaten (weekly average)</string>
+    <string name="today_watch_burn">Watch burn</string>
+    <string name="today_real_tdee">Estimated real burn: %1$s kcal/day</string>
+    <string name="today_real_tdee_basis">From what you\'ve eaten and how your weight has changed.</string>
+    <string name="today_real_tdee_basis_watch">From what you\'ve eaten and how your weight has changed. Your watch says %1$s.</string>
+    <string name="today_real_tdee_pending">The estimated real burn appears after 3 weeks of logged weigh-ins and meals.</string>
+    <string name="today_avg_macros">Average macros</string>
+    <string name="today_no_meals_logged_period">No meals logged in this period</string>
+    <string name="today_kcal_per_day">kcal a day</string>
+    <string name="today_hide_nutrients">Hide nutrients</string>
+    <string name="today_show_nutrients">Show nutrients</string>
+    <string name="today_date_range">From %1$s to %2$s</string>
+    <string name="today_activity">Activity</string>
+    <string name="today_activity_since">Averages from watch data since %1$s</string>
+    <string name="today_km_per_week">km per week</string>
+    <string name="today_workouts_per_week">workouts per week</string>
+    <string name="today_avg_steps">average steps</string>
+    <string name="today_avg_sleep">average sleep</string>
+    <string name="today_habits">Habits</string>
+    <string name="today_hide">Hide</string>
+    <string name="today_show">Show</string>
+    <string name="today_top_foods">What you eat most</string>
+    <plurals name="today_times">
+        <item quantity="one">%d time</item>
+        <item quantity="other">%d times</item>
+    </plurals>
+    <string name="today_meal_time">%1$s: around %2$s</string>
+    <string name="today_avg_water">Average water: %1$s L</string>
+    <string name="today_eta_reached">You\'re already at your target weight (%1$s).</string>
+    <string name="today_eta_not_approaching">At the pace of the last 4 weeks you\'re not getting closer to your %1$s target.</string>
+    <string name="today_eta_on">At this pace you\'ll reach %1$s around %2$s (%3$s).</string>
+    <string name="today_eta_one_week">in a week</string>
+    <plurals name="today_eta_weeks">
+        <item quantity="one">about %d week</item>
+        <item quantity="other">about %d weeks</item>
+    </plurals>
+
+    <!-- Widget -->
+    <string name="today_mascot">Mascot</string>
+    <plurals name="today_widget_log_today">
+        <item quantity="one">day · log today</item>
+        <item quantity="other">days · log today</item>
+    </plurals>
+    <string name="today_scan">Scan</string>
+
+    <!-- Reminders -->
+    <string name="today_reminder_title">What have you eaten today?</string>
+    <string name="today_reminder_text">Log it in one tap and keep your streak.</string>
+    <string name="today_reminder_channel">Reminders</string>
+    <string name="today_reminder_channel_description">A gentle nudge if you haven\'t logged anything by a set time</string>
+
+    <!-- Privacy -->
+    <string name="today_privacy_title">Privacy</string>
+    <string name="today_privacy_health">Migas is a personal app with no server and no accounts. It reads from Health Connect the calories, weight, steps, sleep, resting heart rate and workouts your watch\'s app writes (Garmin Connect, Samsung Health, Fitbit…), only to show them and work out your daily target.</string>
+    <string name="today_privacy_water">It writes to Health Connect the water you log and the weight you import from a CSV. No health data leaves your phone, except what you export.</string>
+    <string name="today_privacy_ai">If you set up the AI, the phrases you dictate and the photos of labels and dishes are sent to the provider you choose (NanoGPT or Anthropic, the company behind Claude) to interpret them; never Health Connect data.</string>
+    <string name="today_close">Close</string>
+
+    <!-- Errors shown in a snackbar -->
+    <string name="today_error_amount">amount out of range</string>
+    <string name="today_error_combo_gone">the combo no longer exists</string>
+    <string name="today_error_water">water amount out of range</string>
+    <string name="today_error_weight">weight out of range</string>
+    <string name="today_error_height">height out of range</string>
+    <string name="today_error_birth_future">the date of birth is in the future</string>
+    <string name="today_error_age">age out of range</string>
+    <string name="today_error_macros">macro split out of range</string>
+    <string name="today_error_adjustment">adjustment out of range</string>
+    <string name="today_error_resting">resting calories out of range</string>
+</resources>

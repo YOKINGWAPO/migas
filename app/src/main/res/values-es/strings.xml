@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_description">Racha y acceso directo al escáner</string>
+
+    <string name="settings_language">Idioma</string>
+    <string name="settings_language_system">Sistema</string>
+    <string name="settings_language_hint">Los alimentos básicos se quedan en el idioma que tenía la app cuando se cargaron; la búsqueda los encuentra en castellano y en inglés.</string>
+
+    <string name="import_title">Importar de otras apps</string>
+    <string name="import_entry_hint">Diario de comidas o historial de peso desde un CSV: el export de otra app o una hoja de cálculo.</string>
+    <string name="import_entry_button">Importar CSV…</string>
+    <string name="import_intro">Las columnas se reconocen por su nombre, en castellano o en inglés y en cualquier orden. Antes de guardar nada verás una vista previa.</string>
+    <string name="import_diary_columns">Diario: fecha, alimento y kcal son obligatorias; comida, hora, gramos, proteínas, hidratos y grasas, opcionales. Una fila sin gramos se guarda solo con sus totales.</string>
+    <string name="import_weight_columns">Peso: fecha y peso en kg. Se guarda en Health Connect, así que también lo ven tus otras apps.</string>
+    <string name="import_pick">Elegir CSV…</string>
+    <string name="import_template_diary">Plantilla de diario</string>
+    <string name="import_template_weight">Plantilla de peso</string>
+    <string name="import_template_diary_file">plantilla_diario.csv</string>
+    <string name="import_template_weight_file">plantilla_peso.csv</string>
+    <string name="import_template_saved">Plantilla guardada</string>
+    <string name="import_preview_diary">Diario de comidas</string>
+    <string name="import_preview_weight">Historial de peso</string>
+    <string name="import_valid_rows">Filas válidas: %1$d · días: %2$d</string>
+    <string name="import_range">Del %1$s al %2$s</string>
+    <string name="import_errors">Filas con errores: %1$d (no se importan)</string>
+    <string name="import_error_line">Línea %1$d: %2$s</string>
+    <string name="import_more_errors">…y %1$d más</string>
+    <string name="import_already_logged">Días que ya tienen registros: %1$d</string>
+    <string name="import_skip_logged">Saltar los días que ya tienen registros</string>
+    <string name="import_without_meal">Filas sin una comida reconocida: %1$d. Van a:</string>
+    <string name="import_button">Importar</string>
+    <string name="import_nothing">No hay nada que importar</string>
+    <string name="import_diary_done">Importados %1$d registros de %2$d días (%3$d alimentos nuevos)</string>
+    <string name="import_weight_done">Importados %1$d pesajes en Health Connect</string>
+    <string name="import_weight_permission">El peso solo se puede importar con permiso de Health Connect para escribirlo.</string>
+    <string name="import_hc_missing">Health Connect no está disponible en este móvil.</string>
+    <string name="import_file_too_big">El archivo es demasiado grande (5 MB como mucho)</string>
+    <string name="import_file_empty">El archivo está vacío</string>
+    <string name="import_file_too_many_rows">Demasiadas filas (50.000 como mucho)</string>
+    <string name="import_file_unknown_columns">No se reconocen las columnas. Un diario necesita fecha, alimento y kcal; un historial de peso, fecha y peso. Usa una plantilla como guía.</string>
+    <string name="import_open_failed">No se pudo abrir el archivo</string>
+    <string name="import_problem_bad_date">fecha no válida</string>
+    <string name="import_problem_future_date">fecha en el futuro</string>
+    <string name="import_problem_bad_number">«%1$s» no es un número</string>
+    <string name="import_problem_out_of_range">«%1$s» fuera de rango</string>
+    <string name="import_problem_missing_name">sin nombre de alimento</string>
+    <string name="import_problem_missing_kcal">sin kcal (ni proteínas, hidratos y grasas)</string>
+    <string name="import_problem_too_many_kcal">más de 950 kcal por 100 g</string>
+    <string name="import_col_date">fecha</string>
+    <string name="import_col_time">hora</string>
+    <string name="import_col_meal">comida</string>
+    <string name="import_col_name">alimento</string>
+    <string name="import_col_brand">marca</string>
+    <string name="import_col_grams">gramos</string>
+    <string name="import_col_kcal">kcal</string>
+    <string name="import_col_protein">proteínas</string>
+    <string name="import_col_carbs">hidratos</string>
+    <string name="import_col_fat">grasas</string>
+    <string name="import_col_weight">peso</string>
+</resources>

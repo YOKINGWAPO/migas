@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Migas</string>
+    <string name="widget_description">Streak and a shortcut to the scanner</string>
+
+    <string name="settings_language">Language</string>
+    <string name="settings_language_system">System</string>
+    <string name="settings_language_hint">Basic foods keep the language the app had when they were first loaded; search finds them in English and Spanish.</string>
+
+    <string name="import_title">Import from other apps</string>
+    <string name="import_entry_hint">Food diary or weight history from a CSV file: another app\'s export or a spreadsheet.</string>
+    <string name="import_entry_button">Import CSV…</string>
+    <string name="import_intro">Columns are recognised by name, in English or Spanish and in any order. You will see a preview before anything is saved.</string>
+    <string name="import_diary_columns">Diary: date, food and kcal are required; meal, time, grams, protein, carbs and fat are optional. A row without grams is saved with its totals only.</string>
+    <string name="import_weight_columns">Weight: date and weight in kg. It is saved in Health Connect, so your other apps see it too.</string>
+    <string name="import_pick">Choose CSV…</string>
+    <string name="import_template_diary">Diary template</string>
+    <string name="import_template_weight">Weight template</string>
+    <string name="import_template_diary_file">diary_template.csv</string>
+    <string name="import_template_weight_file">weight_template.csv</string>
+    <string name="import_template_saved">Template saved</string>
+    <string name="import_preview_diary">Food diary</string>
+    <string name="import_preview_weight">Weight history</string>
+    <string name="import_valid_rows">Valid rows: %1$d · days: %2$d</string>
+    <string name="import_range">From %1$s to %2$s</string>
+    <string name="import_errors">Rows with errors: %1$d (they will not be imported)</string>
+    <string name="import_error_line">Line %1$d: %2$s</string>
+    <string name="import_more_errors">…and %1$d more</string>
+    <string name="import_already_logged">Days that already have entries: %1$d</string>
+    <string name="import_skip_logged">Skip days that already have entries</string>
+    <string name="import_without_meal">Rows without a recognised meal: %1$d. They go to:</string>
+    <string name="import_button">Import</string>
+    <string name="import_nothing">Nothing to import</string>
+    <string name="import_diary_done">Imported %1$d entries over %2$d days (%3$d new foods)</string>
+    <string name="import_weight_done">Imported %1$d weigh-ins into Health Connect</string>
+    <string name="import_weight_permission">Weight can only be imported with Health Connect permission to write it.</string>
+    <string name="import_hc_missing">Health Connect is not available on this phone.</string>
+    <string name="import_file_too_big">The file is too big (5 MB at most)</string>
+    <string name="import_file_empty">The file is empty</string>
+    <string name="import_file_too_many_rows">Too many rows (50,000 at most)</string>
+    <string name="import_file_unknown_columns">Columns not recognised. A diary needs date, food and kcal; a weight history, date and weight. Use a template as a guide.</string>
+    <string name="import_open_failed">Could not open the file</string>
+    <string name="import_problem_bad_date">invalid date</string>
+    <string name="import_problem_future_date">date in the future</string>
+    <string name="import_problem_bad_number">“%1$s” is not a number</string>
+    <string name="import_problem_out_of_range">“%1$s” out of range</string>
+    <string name="import_problem_missing_name">no food name</string>
+    <string name="import_problem_missing_kcal">no kcal (nor protein, carbs and fat)</string>
+    <string name="import_problem_too_many_kcal">more than 950 kcal per 100 g</string>
+    <string name="import_col_date">date</string>
+    <string name="import_col_time">time</string>
+    <string name="import_col_meal">meal</string>
+    <string name="import_col_name">food</string>
+    <string name="import_col_brand">brand</string>
+    <string name="import_col_grams">grams</string>
+    <string name="import_col_kcal">kcal</string>
+    <string name="import_col_protein">protein</string>
+    <string name="import_col_carbs">carbs</string>
+    <string name="import_col_fat">fat</string>
+    <string name="import_col_weight">weight</string>
+</resources>
