@@ -45,7 +45,7 @@ La build release se firma si existe `~/.android-keys/calorias.properties` (o la 
 
 ## Privacidad
 
-Ningún dato de salud sale del móvil. Detalle en la [política de privacidad](https://yokingwapo.github.io/migas/privacidad).
+Ningún dato de salud sale del móvil. Detalle en la [política de privacidad](https://yokingfactory.dev/migas/privacidad/).
 
 ## Licencia
 
