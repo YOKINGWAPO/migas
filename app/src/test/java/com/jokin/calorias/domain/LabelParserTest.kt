@@ -1,8 +1,10 @@
 package com.jokin.calorias.domain
 
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class LabelParserTest {
@@ -198,5 +200,240 @@ class LabelParserTest {
     fun tableBoundsNeedTwoNutrients() {
         assertNull(LabelParser.tableBounds(listOf(line("Sal marina", 0), line("Ingredientes: harina", 1))))
         assertNull(LabelParser.tableBounds(emptyList()))
+    }
+
+    @Test
+    fun unitGluedAsNineOnEveryRowIsStripped() {
+        val r = LabelParser.parse(
+            table(
+                listOf("Información nutricional", "Por 100 g", "", ""),
+                listOf("Valor energético", "1566 kJ / 372 kcal", "", ""),
+                listOf("Grasas", "7,09", "", ""),
+                listOf("de las cuales saturadas", "1,39", "", ""),
+                listOf("Hidratos de carbono", "58,79", "", ""),
+                listOf("de los cuales azúcares", "0,79", "", ""),
+                listOf("Proteínas", "13,59", "", ""),
+            )
+        )!!
+        assertEquals(372.0, r.nutrients.kcal, 0.001)
+        assertEquals(7.0, r.nutrients.fat, 0.001)
+        assertEquals(58.7, r.nutrients.carbs, 0.001)
+        assertEquals(13.5, r.nutrients.protein, 0.001)
+        assertEquals(1.3, r.nutrients.extras[ExtraNutrient.SATURATED_FAT]!!, 0.001)
+        assertEquals(0.7, r.nutrients.extras[ExtraNutrient.SUGARS]!!, 0.001)
+    }
+
+    @Test
+    fun saturatesThatCannotFitInTheFatAreLeftBlank() {
+        // "13" is "1,3" with the comma lost, but nothing confirms it: better blank than a guess.
+        val r = LabelParser.parse(
+            table(
+                listOf("Valor energético", "372 kcal", "", ""),
+                listOf("Grasas", "7,0 g", "", ""),
+                listOf("de las cuales saturadas", "13 g", "", ""),
+                listOf("Hidratos de carbono", "58,7 g", "", ""),
+                listOf("Proteínas", "13,5 g", "", ""),
+            )
+        )!!
+        assertNull(r.nutrients.extras[ExtraNutrient.SATURATED_FAT])
+        assertEquals(7.0, r.nutrients.fat, 0.001)
+    }
+
+    @Test
+    fun lostDecimalCommaInAMacroIsRestoredByTheKcal() {
+        // "35" of fat with 372 kcal cannot be; "3,5" makes the kcal add up.
+        val r = LabelParser.parse(
+            table(
+                listOf("Valor energético", "372 kcal", "", ""),
+                listOf("Grasas", "35 g", "", ""),
+                listOf("Hidratos de carbono", "65 g", "", ""),
+                listOf("Proteínas", "13,5 g", "", ""),
+            )
+        )!!
+        assertEquals(3.5, r.nutrients.fat, 0.001)
+    }
+
+    @Test
+    fun valuesAreKeptAsPrintedWhenTheyAddUp() {
+        // "19 g" of protein could be "1,9" with a lost comma, but the kcal agree with 19.
+        val r = LabelParser.parse(
+            table(
+                listOf("Energía", "400 kcal", "", ""),
+                listOf("Grasas", "8 g", "", ""),
+                listOf("Hidratos de carbono", "60 g", "", ""),
+                listOf("Proteínas", "19 g", "", ""),
+            )
+        )!!
+        assertEquals(19.0, r.nutrients.protein, 0.001)
+        assertEquals(60.0, r.nutrients.carbs, 0.001)
+    }
+
+    @Test
+    fun labelsWrappedOverSeveralLinesInTwoLanguages() {
+        // Small print: each label spans lines, the value sits between them (Spanish / Portuguese).
+        fun at(text: String, x: Int, y: Int) = TextLine(text, TextBox(x, y - 6, x + 8 * text.length, y + 6))
+        val r = LabelParser.parse(
+            listOf(
+                at("Valor", 10, 47), at("Energético/", 10, 60), at("Energia", 10, 72), at("74 kcal", 200, 66),
+                at("Grasas", 10, 86), at("Lípidos", 10, 98), at("4,2 g", 200, 92),
+                at("de las cuales/", 10, 112), at("dos quais", 10, 122), at("-Saturadas/", 10, 134), at("Saturados", 10, 145), at("2,9 g", 200, 140),
+                at("Hidratos de", 10, 159), at("Carbono", 10, 170), at("5,1 g", 200, 165),
+                at("Proteinas", 10, 229), at("3,9 g", 200, 229),
+                at("Sal", 10, 246), at("0,08 g", 200, 246),
+            )
+        )!!
+        assertEquals(74.0, r.nutrients.kcal, 0.001)
+        assertEquals(4.2, r.nutrients.fat, 0.001)
+        assertEquals(2.9, r.nutrients.extras[ExtraNutrient.SATURATED_FAT]!!, 0.001)
+        assertEquals(5.1, r.nutrients.carbs, 0.001)
+        assertEquals(3.9, r.nutrients.protein, 0.001)
+        assertEquals(0.08, r.nutrients.extras[ExtraNutrient.SALT]!!, 0.0001)
+    }
+
+    @Test
+    fun runningTextOnSmallPackages() {
+        val r = LabelParser.parse(
+            listOf(
+                line("Información nutricional por 100 g: valor energético 1046 kJ/250 kcal; grasas 3,2 g,", 0),
+                line("de las cuales saturadas 1,1 g; hidratos de carbono 40,5 g, de los cuales azúcares 12 g;", 1),
+                line("fibra alimentaria 2,5 g; proteínas 8,1 g; sal 0,85 g.", 2),
+            )
+        )!!
+        assertEquals(250.0, r.nutrients.kcal, 0.001)
+        assertEquals(3.2, r.nutrients.fat, 0.001)
+        assertEquals(40.5, r.nutrients.carbs, 0.001)
+        assertEquals(8.1, r.nutrients.protein, 0.001)
+        assertEquals(
+            mapOf(ExtraNutrient.SATURATED_FAT to 1.1, ExtraNutrient.SUGARS to 12.0, ExtraNutrient.FIBER to 2.5, ExtraNutrient.SALT to 0.85),
+            r.nutrients.extras,
+        )
+    }
+
+    @Test
+    fun unsaturatedFatsAreNotSaturates() {
+        val r = LabelParser.parse(
+            table(
+                listOf("Valor energético", "884 kcal", "", ""),
+                listOf("Grasas", "100 g", "", ""),
+                listOf("de las cuales saturadas", "14 g", "", ""),
+                listOf("monoinsaturadas", "73 g", "", ""),
+                listOf("poliinsaturadas", "11 g", "", ""),
+            )
+        )!!
+        assertEquals(14.0, r.nutrients.extras[ExtraNutrient.SATURATED_FAT]!!, 0.001)
+    }
+
+    @Test
+    fun germanTable() {
+        val r = LabelParser.parse(
+            table(
+                listOf("Nährwerte", "pro 100 g", "", ""),
+                listOf("Brennwert", "1046 kJ / 250 kcal", "", ""),
+                listOf("Fett", "3,2 g", "", ""),
+                listOf("davon gesättigte Fettsäuren", "1,1 g", "", ""),
+                listOf("Kohlenhydrate", "40,5 g", "", ""),
+                listOf("davon Zucker", "12 g", "", ""),
+                listOf("Ballaststoffe", "2,5 g", "", ""),
+                listOf("Eiweiß", "8,1 g", "", ""),
+                listOf("Salz", "0,85 g", "", ""),
+            )
+        )!!
+        assertEquals(250.0, r.nutrients.kcal, 0.001)
+        assertEquals(3.2, r.nutrients.fat, 0.001)
+        assertEquals(40.5, r.nutrients.carbs, 0.001)
+        assertEquals(8.1, r.nutrients.protein, 0.001)
+        assertEquals(
+            mapOf(ExtraNutrient.SATURATED_FAT to 1.1, ExtraNutrient.SUGARS to 12.0, ExtraNutrient.FIBER to 2.5, ExtraNutrient.SALT to 0.85),
+            r.nutrients.extras,
+        )
+    }
+
+    @Test
+    fun theFirstOfTwo100gHeadersIsThePer100gColumn() {
+        val r = LabelParser.parse(
+            table(
+                listOf("Valores medios", "por 100g", "IR por 100g", "por ración 40 g"),
+                listOf("Valor energético", "375 kcal", "19 %", "147 kcal"),
+                listOf("Grasas", "7,0 g", "10 %", "2,8 g"),
+                listOf("Hidratos de carbono", "59 g", "23 %", "23 g"),
+                listOf("Proteínas", "14 g", "28 %", "5,6 g"),
+            )
+        )!!
+        assertEquals(375.0, r.nutrients.kcal, 0.001)
+        assertEquals(7.0, r.nutrients.fat, 0.001)
+        assertEquals(14.0, r.nutrients.protein, 0.001)
+    }
+
+    @Test
+    fun kcalComeFromMacrosWhenTheEnergyRowIsMissing() {
+        val r = LabelParser.parse(table(listOf("Grasas", "3 g", "", ""), listOf("Hidratos de carbono", "40 g", "", ""), listOf("Proteínas", "8 g", "", "")))!!
+        assertEquals(4 * 8.0 + 4 * 40.0 + 9 * 3.0, r.nutrients.kcal, 0.001)
+        assertEquals(emptySet<Macro>(), r.unreadMacros)
+    }
+
+    @Test
+    fun macrosNotFoundAreReportedAsUnread() {
+        val r = LabelParser.parse(table(listOf("Valor energético", "250 kcal", "", ""), listOf("Grasas", "3,2 g", "", "")))!!
+        assertEquals(setOf(Macro.PROTEIN, Macro.CARBS), r.unreadMacros)
+        assertEquals(0.0, r.nutrients.protein, 0.0)
+    }
+
+    @Test
+    fun passesThatAgreeOutvoteOneMisread() {
+        val clean = spanish
+        val misread = spanish.map { if (it.text == "8,1 g") it.copy(text = "3,1 g") else it }
+        assertEquals(8.1, LabelParser.parseBest(listOf(misread, clean, clean))!!.nutrients.protein, 0.001)
+        assertEquals(8.1, LabelParser.parseBest(listOf(clean, clean, misread))!!.nutrients.protein, 0.001)
+    }
+
+    @Test
+    fun spacedUnitReadAsNine() {
+        val r = LabelParser.parse(table(listOf("Valor energético", "250 kcal", "", ""), listOf("Sal", "0,08 9", "", ""), listOf("Grasas", "3,2 9", "", "")))!!
+        assertEquals(0.08, r.nutrients.extras[ExtraNutrient.SALT]!!, 0.0001)
+        assertEquals(3.2, r.nutrients.fat, 0.001)
+    }
+
+    @Test
+    fun aGlued8OnALabelThatPrintsItsUnits() {
+        // Every other value shows its "g": "0,78" and "1,38" are "0,7g" and "1,3g" with the g read as 8.
+        val r = LabelParser.parse(
+            table(
+                listOf("Valor energético", "375 kcal", "", ""),
+                listOf("Grasas", "7,0 g", "", ""),
+                listOf("de las cuales saturadas", "1,38", "", ""),
+                listOf("Hidratos de carbono", "59 g", "", ""),
+                listOf("de los cuales azúcares", "0,78", "", ""),
+                listOf("Fibra alimentaria", "10,0 g", "", ""),
+                listOf("Proteínas", "14 g", "", ""),
+                listOf("Sal", "0,02 g", "", ""),
+            )
+        )!!
+        assertEquals(1.3, r.nutrients.extras[ExtraNutrient.SATURATED_FAT]!!, 0.001)
+        assertEquals(0.7, r.nutrients.extras[ExtraNutrient.SUGARS]!!, 0.001)
+        assertEquals(0.02, r.nutrients.extras[ExtraNutrient.SALT]!!, 0.0001)
+    }
+
+    @Test
+    fun kcalWorkedOutFromMacrosAreFlagged() {
+        val r = LabelParser.parse(table(listOf("Grasas", "3 g", "", ""), listOf("Hidratos de carbono", "40 g", "", ""), listOf("Proteínas", "8 g", "", "")))!!
+        assertTrue(r.kcalFromMacros)
+        assertFalse(LabelParser.parse(spanish)!!.kcalFromMacros)
+    }
+
+    @Test
+    fun theLiveReadingFillsInKcalCutOffInThePhoto() {
+        val photo = spanish.filterNot { "kcal" in it.text }
+        assertTrue(LabelParser.parse(photo)!!.kcalFromMacros)
+        val live = LabelParser.parse(spanish)!!
+        val r = LabelParser.parseBest(listOf(photo), hint = live)!!
+        assertEquals(250.0, r.nutrients.kcal, 0.001)
+        assertFalse(r.kcalFromMacros)
+        assertEquals(8.1, r.nutrients.protein, 0.001)
+    }
+
+    @Test
+    fun thePhotoOutweighsALiveReadingThatDisagrees() {
+        val live = LabelParser.parse(spanish.map { if (it.text == "8,1 g") it.copy(text = "6,1 g") else it })!!
+        assertEquals(8.1, LabelParser.parseBest(listOf(spanish), hint = live)!!.nutrients.protein, 0.001)
     }
 }

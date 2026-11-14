@@ -124,6 +124,7 @@
     <string name="add_label_needs_camera">Hace falta permiso de cámara para leer la etiqueta.</string>
     <string name="add_label_reading">Leyendo etiqueta…</string>
     <string name="add_label_aim">Encuadra la tabla de información nutricional; el recuadro marca lo que reconoce.</string>
+    <string name="add_label_live">Veo %1$s kcal · P %2$s · H %3$s · G %4$s</string>
     <string name="add_take_photo">Hacer foto</string>
     <string name="add_ai_connection_ok">Conexión correcta con %1$s</string>
     <string name="add_ai_product_fallback">Producto</string>

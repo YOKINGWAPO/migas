@@ -124,6 +124,7 @@
     <string name="add_label_needs_camera">Reading the label needs camera permission.</string>
     <string name="add_label_reading">Reading label…</string>
     <string name="add_label_aim">Frame the nutrition facts table; the box marks what it recognises.</string>
+    <string name="add_label_live">Seeing %1$s kcal · P %2$s · C %3$s · F %4$s</string>
     <string name="add_take_photo">Take photo</string>
     <string name="add_ai_connection_ok">Connected to %1$s</string>
     <string name="add_ai_product_fallback">Product</string>

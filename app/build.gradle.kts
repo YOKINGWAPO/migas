@@ -25,8 +25,8 @@ android {
         applicationId = "com.jokin.calorias"
         minSdk = 34
         targetSdk = 36
-        versionCode = 19
-        versionName = "1.11.2"
+        versionCode = 20
+        versionName = "1.12.0"
         // The Xiaomi 15 Pro is arm64; x86_64 is only for the emulator. Drops ML Kit's 32-bit natives.
         ndk { abiFilters += listOf("arm64-v8a", "x86_64") }
     }

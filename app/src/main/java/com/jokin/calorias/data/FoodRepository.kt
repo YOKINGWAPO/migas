@@ -12,6 +12,7 @@ import com.jokin.calorias.data.db.RecentFood
 import com.jokin.calorias.data.ocr.LabelOcr
 import com.jokin.calorias.data.remote.Barcodes
 import com.jokin.calorias.data.remote.EstimatedFood
+import com.jokin.calorias.data.remote.Macro
 import com.jokin.calorias.data.remote.MealEstimate
 import com.jokin.calorias.data.remote.OffLookup
 import com.jokin.calorias.data.remote.OffProduct
@@ -19,6 +20,8 @@ import com.jokin.calorias.data.remote.OpenFoodFactsClient
 import com.jokin.calorias.data.settings.LabelMode
 import com.jokin.calorias.data.settings.SettingsRepository
 import com.jokin.calorias.domain.LabelParser
+import com.jokin.calorias.domain.LabelReading
+import com.jokin.calorias.domain.OcrLines
 import com.jokin.calorias.domain.Nutrients
 import com.jokin.calorias.domain.VoiceParser
 import java.io.ByteArrayOutputStream
@@ -171,13 +174,16 @@ class FoodRepository(
         save(0, name, null, null, per100g, null, null, FoodSource.ESTIMATED)
 
     /** The basic mode leaves name and brand blank: OCR cannot tell them apart from the rest of the pack. */
-    suspend fun readLabel(photo: Bitmap): EstimatedFood {
+    /** [live] is what the camera preview read on device; the basic mode weighs it with the photo and falls back to it. */
+    suspend fun readLabel(photo: Bitmap, live: LabelReading?): EstimatedFood {
         val s = settings.current()
         return when (s.labelMode) {
             LabelMode.AI -> (ai.session() ?: throw noApiKey()).readLabel(jpegForUpload(photo))
             LabelMode.BASIC -> {
-                val reading = LabelParser.parse(ocr.lines(photo)) ?: throw LabelNotReadException(context.getString(R.string.add_error_label_not_read))
-                EstimatedFood(name = "", brand = null, reading.nutrients, reading.servingGrams)
+                val reading = LabelParser.parseBest(ocr.passes(photo).map(OcrLines::upright), hint = live)
+                    ?: throw LabelNotReadException(context.getString(R.string.add_error_label_not_read))
+                val unread = reading.unreadMacros.map { Macro.valueOf(it.name) }.toSet()
+                EstimatedFood(name = "", brand = null, reading.nutrients, reading.servingGrams, unread)
             }
         }
     }

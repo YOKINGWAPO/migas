@@ -60,10 +60,16 @@ import androidx.core.content.ContextCompat
 import com.google.mlkit.vision.text.TextRecognition
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions
 import com.jokin.calorias.R
+import com.jokin.calorias.data.ocr.toOcrLines
 import com.jokin.calorias.data.ocr.toTextLines
 import com.jokin.calorias.data.remote.EstimatedFood
 import com.jokin.calorias.domain.LabelParser
+import com.jokin.calorias.domain.LabelReading
+import com.jokin.calorias.domain.Macro
+import com.jokin.calorias.domain.OcrLines
+import com.jokin.calorias.domain.TextLine
 import com.jokin.calorias.ui.common.CameraBox
+import com.jokin.calorias.ui.common.decimal
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -80,19 +86,32 @@ private sealed interface LabelShot {
 
 /**
  * Full-screen camera for a nutrition label: frames the table while aiming, then reads the shot
- * with [read] behind a progress overlay that can be cancelled.
+ * with [read] behind a progress overlay that can be cancelled. With [liveReading] the values read
+ * on device from the last frames show while aiming and go to [read] along with the shot.
  */
 @Composable
-fun LabelCameraDialog(modeLabel: String, read: suspend (Bitmap) -> EstimatedFood, onResult: (EstimatedFood) -> Unit, onDismiss: () -> Unit) {
+fun LabelCameraDialog(
+    modeLabel: String,
+    liveReading: Boolean,
+    read: suspend (Bitmap, LabelReading?) -> EstimatedFood,
+    onResult: (EstimatedFood) -> Unit,
+    onDismiss: () -> Unit,
+) {
     Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false, decorFitsSystemWindows = false)) {
         Box(Modifier.fillMaxSize().background(Color.Black).systemBarsPadding()) {
-            LabelCamera(modeLabel, read, onResult, onDismiss)
+            LabelCamera(modeLabel, liveReading, read, onResult, onDismiss)
         }
     }
 }
 
 @Composable
-private fun LabelCamera(modeLabel: String, read: suspend (Bitmap) -> EstimatedFood, onResult: (EstimatedFood) -> Unit, onDismiss: () -> Unit) {
+private fun LabelCamera(
+    modeLabel: String,
+    liveReading: Boolean,
+    read: suspend (Bitmap, LabelReading?) -> EstimatedFood,
+    onResult: (EstimatedFood) -> Unit,
+    onDismiss: () -> Unit,
+) {
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
     var hasPermission by remember {
@@ -102,6 +121,7 @@ private fun LabelCamera(modeLabel: String, read: suspend (Bitmap) -> EstimatedFo
     LaunchedEffect(Unit) { if (!hasPermission) askPermission.launch(Manifest.permission.CAMERA) }
 
     var shot by remember { mutableStateOf<LabelShot>(LabelShot.Aiming()) }
+    var live by remember { mutableStateOf<LabelReading?>(null) }
     var job by remember { mutableStateOf<Job?>(null) }
     val controller = remember {
         LifecycleCameraController(context).apply { setEnabledUseCases(CameraController.IMAGE_CAPTURE or CameraController.IMAGE_ANALYSIS) }
@@ -110,9 +130,10 @@ private fun LabelCamera(modeLabel: String, read: suspend (Bitmap) -> EstimatedFo
     fun shoot() {
         job = scope.launch {
             try {
+                val seen = live
                 val photo = controller.takeUprightPhoto()
                 shot = LabelShot.Reading(photo)
-                onResult(read(photo))
+                onResult(read(photo, seen))
             } catch (e: CancellationException) {
                 throw e
             } catch (e: Exception) {
@@ -135,7 +156,7 @@ private fun LabelCamera(modeLabel: String, read: suspend (Bitmap) -> EstimatedFo
                     Text(stringResource(R.string.add_label_needs_camera), color = Color.White)
                     Button(onClick = { askPermission.launch(Manifest.permission.CAMERA) }) { Text(stringResource(R.string.add_grant_permission)) }
                 }
-                else -> LabelPreview(controller, aiming = shot is LabelShot.Aiming)
+                else -> LabelPreview(controller, aiming = shot is LabelShot.Aiming, onReading = { if (liveReading) live = it })
             }
             (shot as? LabelShot.Reading)?.let { reading ->
                 Image(reading.photo.asImageBitmap(), contentDescription = null, contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
@@ -155,6 +176,7 @@ private fun LabelCamera(modeLabel: String, read: suspend (Bitmap) -> EstimatedFo
                 color = if (error != null) MaterialTheme.colorScheme.error else Color.White,
                 textAlign = TextAlign.Center,
             )
+            live?.takeIf { shot is LabelShot.Aiming }?.let { LiveReading(it) }
             FilledIconButton(onClick = ::shoot, enabled = hasPermission && shot is LabelShot.Aiming, modifier = Modifier.size(72.dp), shape = CircleShape) {
                 Icon(Icons.Filled.PhotoCamera, contentDescription = stringResource(R.string.add_take_photo), modifier = Modifier.size(32.dp))
             }
@@ -162,12 +184,30 @@ private fun LabelCamera(modeLabel: String, read: suspend (Bitmap) -> EstimatedFo
     }
 }
 
-/** Live preview that frames the nutrition table found by on-device OCR, whatever the reading mode. */
+/** What the last frames read, so the user can tell whether the table is legible before shooting. */
 @Composable
-private fun LabelPreview(controller: LifecycleCameraController, aiming: Boolean) {
+private fun LiveReading(r: LabelReading) {
+    fun grams(m: Macro, v: Double) = if (m in r.unreadMacros) "–" else decimal(v)
+    Text(
+        stringResource(
+            R.string.add_label_live, decimal(r.nutrients.kcal, 0),
+            grams(Macro.PROTEIN, r.nutrients.protein), grams(Macro.CARBS, r.nutrients.carbs), grams(Macro.FAT, r.nutrients.fat),
+        ),
+        color = Color.White, style = MaterialTheme.typography.titleSmall, textAlign = TextAlign.Center,
+    )
+}
+
+/**
+ * Live preview that frames the nutrition table found by on-device OCR, whatever the reading mode,
+ * and hands [onReading] what the last [LIVE_FRAMES] frames read together (null while they read nothing).
+ */
+@Composable
+private fun LabelPreview(controller: LifecycleCameraController, aiming: Boolean, onReading: (LabelReading?) -> Unit) {
     val context = LocalContext.current
     var box by remember { mutableStateOf<Rect?>(null) }
     val isAiming by rememberUpdatedState(aiming)
+    val report by rememberUpdatedState(onReading)
+    val frames = remember { ArrayDeque<List<TextLine>>() }
 
     DisposableEffect(controller) {
         val main = ContextCompat.getMainExecutor(context)
@@ -176,8 +216,12 @@ private fun LabelPreview(controller: LifecycleCameraController, aiming: Boolean)
             main,
             MlKitAnalyzer(listOf(recognizer), ImageAnalysis.COORDINATE_SYSTEM_VIEW_REFERENCED, main) { result ->
                 if (!isAiming) return@MlKitAnalyzer
-                box = result.getValue(recognizer)?.let { LabelParser.tableBounds(it.toTextLines()) }
+                val text = result.getValue(recognizer)
+                box = text?.let { LabelParser.tableBounds(it.toTextLines()) }
                     ?.let { b -> Rect(b.left.toFloat(), b.top.toFloat(), b.right.toFloat(), b.bottom.toFloat()) }
+                frames.addLast(text?.let { OcrLines.upright(it.toOcrLines()) }.orEmpty())
+                while (frames.size > LIVE_FRAMES) frames.removeFirst()
+                report(LabelParser.parseBest(frames.toList()))
             },
         )
         onDispose {
@@ -187,6 +231,9 @@ private fun LabelPreview(controller: LifecycleCameraController, aiming: Boolean)
     }
     CameraBox(controller, box, locked = false, modifier = Modifier.fillMaxSize())
 }
+
+// About a second of preview: enough frames to outvote one misread, short enough to follow the aim.
+private const val LIVE_FRAMES = 6
 
 /** Captures a photo rotated upright and no larger than [maxSide] px, which is plenty for a label. */
 private suspend fun LifecycleCameraController.takeUprightPhoto(maxSide: Int = 2048): Bitmap = suspendCancellableCoroutine { cont ->

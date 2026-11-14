@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- Debug-only benchmark harness: runs ML Kit over label photos pushed by adb. -->
+        <activity android:name=".debug.LabelOcrDumpActivity" android:exported="true" />
+    </application>
+</manifest>

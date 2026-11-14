@@ -118,6 +118,7 @@ fun FoodEditorScreen(nav: NavController, foodId: Long, initialBarcode: String, i
     if (showLabelCamera) {
         LabelCameraDialog(
             modeLabel = stringResource(settings.labelMode.labelRes),
+            liveReading = settings.labelMode == LabelMode.BASIC,
             read = c.foods::readLabel,
             onResult = { e ->
                 fill(e)
